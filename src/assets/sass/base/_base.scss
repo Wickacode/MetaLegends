@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+* {
+  font-family: "Questrial", sans-serif;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: #07041b;
+  color: white;
+}
+
+.width-contain {
+  max-width: 1600px;
+  margin: auto;
+  min-height: fit-content;
+}
+
+a {
+  cursor: pointer;
+}
+

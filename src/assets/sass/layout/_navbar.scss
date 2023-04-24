@@ -1,0 +1,61 @@
+#navbar {
+
+.linkList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4em;
+
+    img {
+        width: 150px;
+    }
+
+    ul {
+        display: flex;
+        gap: 6em;
+        font-size: 1em;
+        padding: 20px;
+        cursor: pointer;
+
+        li {
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+    }
+.socialLinks {
+    display: flex;
+    gap: 0.5em;
+    padding: 20px;
+
+    button {
+        background-image: linear-gradient(to right top, #480a5e, #440b68, #3d0e72, #31127e, #1b1789);
+        color: #fff;
+        position: relative;
+        overflow: hidden;
+        z-index: 1; 
+        font-size: 20px;
+        border: none;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+
+      }
+      
+      button::before {
+        content: '';
+    position: absolute;
+    top: -22px;
+    right: -12px;
+    width: 63%;
+    height: 100%;
+    background-color: #07041b;
+    transform: skewX(50deg);
+    z-index: -1;
+      }
+      
+}
+
+}
+}
+
+
