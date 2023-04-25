@@ -1,10 +1,11 @@
 import React from "react";
-import Img01 from "../assets/images/img01.png"
-import Img02 from "../assets/images/img02.png"
-import Img03 from "../assets/images/img03.png"
-import Img04 from "../assets/images/img04.png"
-import Img05 from "../assets/images/img05.png"
-import Img06 from "../assets/images/img06.png"
+import Img01 from "../assets/images/ImagesLot/img01.png"
+import Img02 from "../assets/images/ImagesLot/img02.png"
+import Img03 from "../assets/images/ImagesLot/img03.png"
+import Img04 from "../assets/images/ImagesLot/img04.png"
+import Img05 from "../assets/images/ImagesLot/img05.png"
+import Img06 from "../assets/images/ImagesLot/img06.png"
+
 
 export default function ImagesLot() {
   return (

@@ -1,13 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 
+@font-face {
+  font-family: 'Bronova';
+  src: url('../../fonts/bronova/otf/Bronova\ Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
-  font-family: "Questrial", sans-serif;
   list-style-type: none;
   text-decoration: none;
 }
 
 body {
   background-color: #07041b;
+  font-family: 'Bronova', sans-serif;
   color: white;
 }
 

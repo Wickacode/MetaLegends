@@ -7,12 +7,13 @@ import {
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import LogoMetaLegends from "../assets/images/logoMetaLegends.svg"
 
 export default function Navbar() {
   return (
     <nav id="navbar">
       <div className="linkList">
-        <img src="http://localhost:8080/img/title-logo.1c7a7a86.svg" alt="logo meta legends" />
+        <img src={LogoMetaLegends} alt="logo meta legends" />
         <ul>
           <li>meta legends</li>
           <li>meta life</li>
