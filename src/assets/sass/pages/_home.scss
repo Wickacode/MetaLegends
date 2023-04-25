@@ -1,0 +1,94 @@
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  border: 2 px solid red;
+  height: 100vh;
+
+  .homeContent {
+    display: flex;
+    justify-content: center;
+    
+  .leftSpace {
+    margin: 80px 0 0 143px;
+    width: 50%;
+
+    h1 {
+      font-size: 3em;
+      font-weight: bolder;
+      text-transform: uppercase;
+
+      .title-with-gradient {
+        background: linear-gradient(to right, #4c2f54, #a645d0, #f098fe);        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+    p {
+      font-size: 1.5em;
+      width: 700px;
+      .strongText {
+        font-weight: bold;
+      }
+    }
+  }
+
+  //ImagesLot
+
+  .imagesLotContainer {
+    position: relative;
+    width: 900px;
+    height: 90vh;
+    
+
+    img {
+      width: 202px;
+    }
+    
+    .img01 {
+        clip-path: polygon(65% 0, 100% 31%, 100% 100%, 0% 100%, 0 51%, 0% 0%);
+        position: absolute;
+        top: 14%;
+        right: 70%;
+    }
+    .img02 {
+        clip-path: polygon(65% 0, 100% 34%, 100% 100%, 0% 100%, 0 51%, 0% 0%);
+        position: absolute;
+        top: 10%;
+        right: 35%;
+        width: 240px;
+    }
+
+    .img03 {
+        clip-path: polygon(17% 0, 100% 0, 100% 100%, 0% 100%, 0 51%, 0 43%);
+    position: absolute;
+    top: 30%;
+    right: 51%;
+    width: 260px;
+    }
+
+    .img04 {
+        clip-path: polygon(52% 0, 100% 0, 100% 100%, 0% 100%, 0 51%, 0 43%);
+        position: absolute;
+        top: 49%;
+        right: 73%;
+        width: 160px;
+    }
+
+    .img05 {
+        clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%, 0 51%, 0 33%);
+        position: absolute;
+        top: 49%;
+        right: 41%;
+    }
+
+    .img06 {
+        clip-path: polygon(31% 0, 100% 0, 100% 100%, 0% 100%, 0 51%, 0 36%);
+    position: absolute;
+    top: 34%;
+    right: 29%;
+    width: 157px;
+    }
+  }
+  }
+
+
+}

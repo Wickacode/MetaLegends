@@ -1,0 +1,14 @@
+@keyframes glowing {
+    0% {
+      background-color: #728dee;
+      box-shadow: 0 0 3px #728dee;
+    }
+    50% {
+      background-color: #849bec;
+      box-shadow: 0 0 10px #849bec;
+    }
+    100% {
+      background-color: #728dee;
+      box-shadow: 0 0 3px #728dee;
+    }
+  }

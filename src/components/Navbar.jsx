@@ -21,24 +21,15 @@ export default function Navbar() {
           <li>Team</li>
         </ul>
         <div className="socialLinks">
-          <button>
-            <link
-              rel="stylesheet"
-              href="https://discord.com/invite/meta-legends"
-            />
+          <a href="https://discord.com/invite/meta-legends" className="socialLinksButton" target="_blank">
             <FontAwesomeIcon icon={faDiscord} />
-          </button>
-          <button>
-            <link rel="stylesheet" href="https://twitter.com/metalegendsnft" />
+          </a>
+          <a href="https://twitter.com/metalegendsnft" className="socialLinksButton" target="_blank">
             <FontAwesomeIcon icon={faTwitter} />
-          </button>
-          <button>
-            <link
-              rel="stylesheet"
-              href="https://www.instagram.com/meta.legends/"
-            />
+          </a>
+          <a href="https://www.instagram.com/meta.legends/" className="socialLinksButton" target="_blank">
             <FontAwesomeIcon icon={faInstagram} />
-          </button>
+          </a>
         </div>
       </div>
     </nav>

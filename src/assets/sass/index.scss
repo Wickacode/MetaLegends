@@ -1,8 +1,10 @@
 @import "helpers/variables";
 @import "helpers/mixins";
 
+@import "base/animations";
 @import "base/base";
 
 @import "layout/navbar";
+@import "layout/buttons";
 
 @import "pages/home";
