@@ -7,88 +7,88 @@
   .homeContent {
     display: flex;
     justify-content: center;
-    
-  .leftSpace {
-    margin: 80px 0 0 143px;
-    width: 50%;
 
-    h1 {
-      font-size: 3em;
-      font-weight: bolder;
-      text-transform: uppercase;
+    .leftSpace {
+      margin: 80px 0 0 143px;
+      width: 50%;
 
-      .title-with-gradient {
-        background: linear-gradient(to right, #4c2f54, #a645d0, #f098fe);        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+      h1 {
+        font-size: 3em;
+        font-weight: bolder;
+        text-transform: uppercase;
+
+        .title-with-gradient {
+          background: linear-gradient(to right, #4c2f54, #a645d0, #f098fe);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+      p {
+        font-size: 1.5em;
+        width: 700px;
+        .strongText {
+          font-weight: bold;
+        }
       }
     }
-    p {
-      font-size: 1.5em;
-      width: 700px;
-      .strongText {
-        font-weight: bold;
+
+    //ImagesLot
+
+    .imagesLotContainer {
+      position: relative;
+      width: 900px;
+      height: 90vh;
+
+      img {
+        width: 202px;
       }
-    }
-  }
 
-  //ImagesLot
-
-  .imagesLotContainer {
-    position: relative;
-    width: 900px;
-    height: 90vh;
-    
-
-    img {
-      width: 202px;
-    }
-    
-    .img01 {
+      .img01 {
         clip-path: polygon(65% 0, 100% 31%, 100% 100%, 0% 100%, 0 51%, 0% 0%);
         position: absolute;
-        top: 14%;
-        right: 70%;
-    }
-    .img02 {
+        top: 9%;
+        right: 64%;
+        width: 247px;
+      }
+      .img02 {
         clip-path: polygon(65% 0, 100% 34%, 100% 100%, 0% 100%, 0 51%, 0% 0%);
         position: absolute;
         top: 10%;
-        right: 35%;
+        right: 38%;
         width: 240px;
-    }
+      }
 
-    .img03 {
+      .img03 {
         clip-path: polygon(17% 0, 100% 0, 100% 100%, 0% 100%, 0 51%, 0 43%);
-    position: absolute;
-    top: 30%;
-    right: 51%;
-    width: 260px;
-    }
+        position: absolute;
+        top: 23%;
+        right: 46%;
+        width: 346px;
+      }
 
-    .img04 {
+      .img04 {
         clip-path: polygon(52% 0, 100% 0, 100% 100%, 0% 100%, 0 51%, 0 43%);
         position: absolute;
-        top: 49%;
-        right: 73%;
-        width: 160px;
-    }
+        top: 43%;
+        right: 70%;
+        width: 203px;
+      }
 
-    .img05 {
+      .img05 {
         clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%, 0 51%, 0 33%);
         position: absolute;
-        top: 49%;
+        top: 43%;
         right: 41%;
-    }
+        width: 250px;
+      }
 
-    .img06 {
+      .img06 {
         clip-path: polygon(31% 0, 100% 0, 100% 100%, 0% 100%, 0 51%, 0 36%);
-    position: absolute;
-    top: 34%;
-    right: 29%;
-    width: 157px;
+        position: absolute;
+        top: 32%;
+        right: 30%;
+        width: 207px;
+      }
     }
   }
-  }
-
-
 }
