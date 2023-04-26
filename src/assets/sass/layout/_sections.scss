@@ -8,15 +8,15 @@
   .sectionText {
     display: flex;
     flex-direction: column;
-    border: 2px solid blue;
     font-size: 1em;
   }
   #firstSection {
     display: flex;
+    gap: 15em;
 
     .metaLegendsImg {
       img {
-        width: 500px;
+        width: 600px;
       }
     }
   }
@@ -32,28 +32,30 @@
       }
     }
 
-    .sectionBlocLeft {
-      position: absolute;
-      top: 150%;
-    }
+   .sectionText2 {
+    margin-left: 70%;
+    margin-top: 30px;
+   }
   }
 
   #thirdSection {
     display: flex;
+    margin-right: -43%;
+    margin-top: 15%;
 
     .metaVerseImg {
       position: absolute;
       left: 0;
-      top: 220%;
+      top: 275%;
 
       img {
-        width: 80%;
+        width: 70%;
       }
 
       .sectionText {
         .sectionText3 {
-          position: absolute;
-          left: 0;
+          margin-left: 100%;
+          margin-top: 50px;
         }
       }
     }
