@@ -1,19 +1,26 @@
 //button
 .btn {
+    display: flex;
+    align-items: center;
     background-color: #5375ef;
     text-transform: uppercase;
     border: none;
     color: beige;
     font-size: 1.6em;
+    gap: 0.5em;
     position: absolute;
       top: 85%;
       right: 38%;
       letter-spacing: 3px;
     cursor: pointer;
-    width: 200px;
-    width: 25%;
-    padding: 20px;
+    width: auto;
+    padding: 18px;
     border-radius: 10px;
+
+    img {
+        width: 40px;
+        margin-left: 10px;
+    }
     
   }
   

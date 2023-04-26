@@ -1,0 +1,61 @@
+.sectionsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 80px;
+
+  .sectionText {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid blue;
+    font-size: 1em;
+  }
+  #firstSection {
+    display: flex;
+
+    .metaLegendsImg {
+      img {
+        width: 500px;
+      }
+    }
+  }
+
+  #secondSection {
+    display: flex;
+
+    .metaLifeImg {
+      position: absolute;
+      left: 0;
+      img {
+        width: 80%;
+      }
+    }
+
+    .sectionBlocLeft {
+      position: absolute;
+      top: 150%;
+    }
+  }
+
+  #thirdSection {
+    display: flex;
+
+    .metaVerseImg {
+      position: absolute;
+      left: 0;
+      top: 220%;
+
+      img {
+        width: 80%;
+      }
+
+      .sectionText {
+        .sectionText3 {
+          position: absolute;
+          left: 0;
+        }
+      }
+    }
+  }
+}

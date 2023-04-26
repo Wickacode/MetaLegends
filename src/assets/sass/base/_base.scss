@@ -10,6 +10,9 @@
 * {
   list-style-type: none;
   text-decoration: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -26,4 +29,18 @@ body {
 
 a {
   cursor: pointer;
+}
+
+.title-with-gradient {
+  background: linear-gradient(to right, #4c2f54, #a645d0, #f098fe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2em;
+        font-weight: bolder;
+        text-transform: uppercase;
+}
+
+p {
+  font-size: 1.2em;
+        width: 700px;
 }

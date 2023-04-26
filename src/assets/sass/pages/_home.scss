@@ -1,31 +1,16 @@
 .homeContainer {
   display: flex;
   flex-direction: column;
-  border: 2 px solid red;
   height: 100vh;
 
   .homeContent {
     display: flex;
     justify-content: center;
-
     .leftSpace {
       margin: 80px 0 0 143px;
       width: 50%;
 
-      h1 {
-        font-size: 3em;
-        font-weight: bolder;
-        text-transform: uppercase;
-
-        .title-with-gradient {
-          background: linear-gradient(to right, #4c2f54, #a645d0, #f098fe);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-        }
-      }
       p {
-        font-size: 1.2em;
-        width: 700px;
         .strongText {
           font-weight: bold;
         }

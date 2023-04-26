@@ -1,0 +1,47 @@
+.factionsContainer {
+  display: flex;
+  justify-content: space-around;
+  height: 100vh;
+  .factionsLeftBloc {
+    display: flex;
+    flex-direction: column;
+
+    .activeImg {
+      width: 300px;
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
+
+    .avatarsFactions {
+        
+        display: flex;
+        justify-content: center;
+        gap: 1em;
+      img {
+        background-image: url(../../images/icone/border.svg);
+        width: 80px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .factionsRightBloc {
+    width: auto;
+    .emblems {
+        display: flex;
+        gap: 3em;
+
+      img {
+        cursor: pointer;
+        width: 90px;
+      }
+    }
+
+    .textSection {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        margin-top: 50px;
+    }
+  }
+}

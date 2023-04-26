@@ -1,0 +1,19 @@
+{
+    "celestials": {
+      "title": "Celestials",
+      "description": "Great guardians of the Metaverse, the Celestials are the most powerful with an influence and a power that is close to the Gods. Their mission is to govern the Metaverse. As they are greatly evolved, they developed a deep sense of ethics and morals, that exists in symbiosis with their vision. They managed to coexist with Burners, even though they are superior.",
+      "image": "/images/celestials.jpg",
+      "units": "11(+5) Units"
+    },
+    "burners": {
+      "title": "Burners",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "image": "/images/burners.jpg"
+    },
+    "robots": {
+      "title": "Robots",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "image": "/images/robots.jpg"
+    }
+  }
+  

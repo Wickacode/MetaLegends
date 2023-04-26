@@ -1,5 +1,8 @@
 import React from "react";
 import ImagesLot from "../components/ImagesLot";
+import OpenSeaLogo from "../assets/images/icone/openSeaLogo.png";
+import Factions from "../pages/Factions";
+import Sections from "./MetaLegends";
 
 export default function Home() {
   const handleButtonClick = () => {
@@ -41,8 +44,11 @@ export default function Home() {
       </div>
       
       <button className="btn" onClick={handleButtonClick}>
-        Get your <strong>meta legend</strong>
+        Get your <strong>meta legend</strong> 
+        <img src={OpenSeaLogo} alt="Logo Opensea" />
       </button>
+      <Factions />
+      <Sections />
     </div>
   );
 }
