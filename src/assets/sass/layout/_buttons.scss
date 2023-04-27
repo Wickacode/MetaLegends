@@ -27,4 +27,25 @@
   .btn:hover {
     animation: glowing 1300ms infinite;
   }
+
+  .btnJoin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5375ef;
+    text-transform: uppercase;
+    border: none;
+    color: beige;
+    font-size: 1.6em;
+    gap: 0.5em;
+    letter-spacing: 3px;
+    cursor: pointer;
+    width: 500px;
+    margin: 80px auto;
+    padding: 18px;
+    border-radius: 10px;
+  }
+  .btnJoin:hover {
+    animation: glowing 1300ms infinite;
+  }
   

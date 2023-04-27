@@ -69,6 +69,10 @@ export default function MetaConnect() {
           </div>
         </div>
       </div>
+
+      <button className="btnJoin">
+        Join <strong>meta connect</strong>
+      </button>
     </div>
   );
 }
