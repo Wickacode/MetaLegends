@@ -1,0 +1,67 @@
+.metaConnectContainer {
+  display: flex;
+  flex-direction: column;
+
+  .mcTopBloc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15em;
+    margin-top: 50px;
+  }
+
+  .mockups {
+    margin-top: 50px;
+    display: flex;
+    gap: 2em;
+
+    .mockup1 {
+      width: 220px;
+    }
+
+    .mockup2 {
+      width: 220px;
+    }
+  }
+
+  .mcBottomBloc {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  margin-top: 100px;
+
+  .textZone {
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+
+    .firstTextZone{
+        margin-right: 150px;
+    }
+
+    .titleRight {
+      margin-bottom: 30px;
+      font-size: 2em;
+      text-transform: uppercase;
+    }
+    .titleLeft {
+      margin-bottom: 30px;
+      font-size: 2em;
+      text-transform: uppercase;
+      text-align: end;
+    }
+    .paragraphZone {
+      width: 440px;
+    }
+
+    
+  }
+}
+}
+
+.mockup3 {
+      img {
+        width: 400px;
+        margin: 0 80px;
+      }
+    }
