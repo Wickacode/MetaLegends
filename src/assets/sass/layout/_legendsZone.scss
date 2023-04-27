@@ -1,0 +1,18 @@
+.legendsZoneContainer{
+margin-top: 90px;
+    .legendsZoneTitle {
+        font-size: 3.5em;
+        text-align: center;
+    }
+    .legendsZoneImg {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 30%;
+        margin: auto;
+
+        .legendsZoneImg01{
+            margin-bottom: -86px;
+        }
+    }
+}

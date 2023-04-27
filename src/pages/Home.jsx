@@ -4,6 +4,7 @@ import OpenSeaLogo from "../assets/images/icone/openSeaLogo.png";
 import Factions from "../pages/Factions";
 import Sections from "./MetaLegends";
 import MetaConnect from "./MetaConnect";
+import LegendsZone from "./LegendsZone";
 
 export default function Home() {
   const handleButtonClick = () => {
@@ -51,6 +52,7 @@ export default function Home() {
       <Factions />
       <Sections />
       <MetaConnect />
+      <LegendsZone />
     </div>
   );
 }
