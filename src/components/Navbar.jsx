@@ -32,7 +32,7 @@ export default function Navbar() {
           <a href="https://www.instagram.com/meta.legends/" className="socialLinksButton" target="_blank">
             <FontAwesomeIcon icon={faInstagram} />
           </a>
-          <a href="https://opensea.io/collection/meta-legends" className="socialLinksButton" target="_blank">
+          <a href="https://opensea.io/collection/meta-legends" className="socialLinksButton openSeaIcone" target="_blank">
             <img src={OpenSeaLogo} alt="Logo Opensea" />
           </a>
         </div>

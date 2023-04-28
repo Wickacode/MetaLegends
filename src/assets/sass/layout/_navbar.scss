@@ -24,18 +24,27 @@
     }
 .socialLinks {
     display: flex;
+    align-items: center;
     gap: 0.5em;
     padding: 20px;
 
     .socialLinksButton {
         background-image: linear-gradient(to right top, #480a5e, #440b68, #3d0e72, #31127e, #1b1789);
         color: #cfbebe;
-        padding: 20px;
+        padding: 10px;
         font-size: 1.4em;
         clip-path: polygon(65% 0, 100% 31%, 100% 100%, 0% 100%, 0 51%, 0% 0%);
 
 
       }  
+
+    .openSeaIcone::after {
+        content: "OpenSea";
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0 10px;
+  vertical-align: middle;
+    }
       
     img {
         width: 23px;
