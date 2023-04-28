@@ -5,7 +5,7 @@ import Mockup3 from "../assets/images/mockups/mockup3.svg";
 
 export default function MetaConnect() {
   return (
-    <div className="metaConnectContainer">
+    <div className="metaConnectContainer" id="sectionMetaConnect">
       <div className="mcTopBloc">
         <div className="sectionText">
           <h2 className="title-with-gradient">Meta connect</h2>

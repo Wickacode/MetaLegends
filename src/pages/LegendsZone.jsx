@@ -4,7 +4,7 @@ import LegendsZoneText from "../assets/images/icone/legends-zone.svg";
 
 export default function LegendsZone() {
   return (
-    <div className="legendsZoneContainer">
+    <div className="legendsZoneContainer" id="sectionLegendsZone">
       <h2 className="title-with-gradient legendsZoneTitle">Legends Zone </h2>
       <div className="legendsZoneImg">
         <img className="legendsZoneImg01" src={AvatarLegendsZone} alt="" />

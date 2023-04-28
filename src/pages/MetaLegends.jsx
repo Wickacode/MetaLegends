@@ -19,7 +19,7 @@ export default function Sections() {
         </div>
       </div>
 
-      <div id="secondSection">
+      <div id="secondSection sectionMetaLife">
         <div className="metaLifeImg">
           <img src={MetaLifeSvg} alt="" />
         </div>
