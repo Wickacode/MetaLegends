@@ -1,0 +1,37 @@
+{
+  "member01": {
+    "name": "Robin",
+    "description": "Founder",
+    "img": "https://i.seadn.io/gae/fDNd-UOk3S2T9TCmtZLyoTuV6akc9u5pqR3U_QzLZjNflJ0ljh8vIpakERRdCUT9fnw4d-Vdod_vppRkDnJoX95PkHRLkQ8i271TWeg?auto=format&w=1000",
+    "instagram": "https://www.instagram.com/janssens_robin_/",
+    "twitter": "https://twitter.com/Robin_Janssens_"
+  },
+  "member02": {
+    "name": "Maxime",
+    "description": "Digital Artist",
+    "img": "https://i.seadn.io/gae/dzn3Jok_HhmHvKQenNNsNVnpgv8r9okJqTVN97nUOsEaHnh0P_pYDb8XKROcdV42j62tj-aVSRS2fqVrna53usc90_bRNJYVawKAJTk?auto=format&w=1000",
+    "instagram": "https://www.instagram.com/mhsmax/",
+    "twitter": "https://twitter.com/HacquardMaxime"
+  },
+  "member03": {
+    "name": "Dara",
+    "description": "General Manager",
+    "img": "https://i.seadn.io/gae/cXlUOieCMk9JsQvUDs4jeqcJyUMUiqlW-RSo6RNLKvcAyMvj0t1xCVfDuhJZ69NUIH-ESwmwPEOgaJJ3CvMkWBqvcnRz9JQ09V1-8A?w=500&auto=format"
+  },
+  "member04": {
+    "name": "Hando",
+    "description": "CTO",
+    "img": "https://i.seadn.io/gae/-V0HPIlKVBqHcrX3rpmKI4TUO_KIKsDAODjxGC22olDoK_md4FSNPWfKfg9P6Rl7C-akOX36gaA6AogbjsjN-VNi6XJdTrbBxOARODw?auto=format&w=1000",
+    "instagram": "https://www.instagram.com/handosensei/",
+    "twitter": "https://twitter.com/HandoSensei"
+  },
+  "member05": {
+    "name": "Azgilar",
+    "img": ""
+  },
+  "member06": {
+    "name": "Rey",
+    "description": "Community & partner manager",
+    "img": "https://media.discordapp.net/attachments/1062361759287103528/1101850634036191313/IMG_2802.png?width=1385&height=1371"
+  }
+}

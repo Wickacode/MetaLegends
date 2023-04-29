@@ -1,5 +1,4 @@
 #navbar {
-
 .linkList {
     display: flex;
     align-items: center;
@@ -48,11 +47,34 @@
       
     img {
         width: 23px;
-    }
+        }
       
 }
 
 }
 }
+
+//Effet de transition lors du clic sur les liens de navigation 
+
+.fade-enter {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  
+  .fade-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 500ms ease-in-out;
+  }
+  
+  .fade-exit {
+    opacity: 1;
+  }
+  
+  .fade-exit-active {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: all 500ms ease-in-out;
+  }
 
 
