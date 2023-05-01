@@ -1,0 +1,83 @@
+.teamContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.teamCard {
+  position: relative;
+  width: 280px;
+  height: 360px;
+  margin: 30px;
+  border-radius: 10px;
+  overflow: hidden;
+
+  .teamImgContainer {
+    height: 100%;
+    position: relative;
+    -webkit-clip-path: polygon(
+      84% 0,
+      100% 16%,
+      100% 100%,
+      15% 100%,
+      0 83%,
+      0 0
+    );
+
+    .cardImg {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      cursor: pointer;
+    }
+  }
+}
+.teamInfoContainer {
+  padding: 20px;
+  position: relative;
+  h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    position: absolute;
+    top: -340px;
+    color: #4d308d;
+  }
+  p {
+    font-size: 16px;
+    margin: 10px 0;
+    position: absolute;
+    top: -314px;
+    color: #4d308d;
+  }
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: #fbefef;
+
+    .faInstagram,
+    .faTwitter {
+      background-color: #4d308d;
+      padding: 18px;
+      border-radius: 10px;
+
+      &:hover {
+        animation: glowing 1300ms infinite;
+      }
+    }
+
+    .faInstagram {
+      position: absolute;
+      top: -70px;
+      left: 20px;
+    }
+
+    .faTwitter {
+      position: absolute;
+      top: -70px;
+      left: 100px;
+    }
+  }
+}

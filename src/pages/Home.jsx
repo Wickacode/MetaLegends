@@ -5,6 +5,7 @@ import Factions from "../pages/Factions";
 import Sections from "./MetaLegends";
 import MetaConnect from "./MetaConnect";
 import LegendsZone from "./LegendsZone";
+import Team from "../components/Team";
 
 export default function Home() {
   const handleButtonClick = () => {
@@ -53,6 +54,7 @@ export default function Home() {
       <Sections />
       <MetaConnect />
       <LegendsZone />
+      <Team />
     </div>
   );
 }

@@ -27,11 +27,13 @@
   },
   "member05": {
     "name": "Azgilar",
-    "img": ""
+    "img": "https://media.discordapp.net/attachments/1080185352792318022/1101790632646819840/Screenshot_2022-11-08-18-19-46-47_43eb37179a699bcb5aac86b4460791cb.jpg?width=1378&height=1371",
+    "twitter": "https://twitter.com/azgilar"
   },
   "member06": {
     "name": "Rey",
     "description": "Community & partner manager",
-    "img": "https://media.discordapp.net/attachments/1062361759287103528/1101850634036191313/IMG_2802.png?width=1385&height=1371"
+    "img": "https://media.discordapp.net/attachments/1062361759287103528/1101850634036191313/IMG_2802.png?width=1385&height=1371",
+    "twitter" : "https://twitter.com/ReyLegendNFT"
   }
 }
