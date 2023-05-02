@@ -41,9 +41,9 @@ export default function Home() {
             </span>
           </p>
         </div>
-        <div className="rightSpace">
+        {/* <div className="rightSpace"> */}
           <ImagesLot />
-        </div>
+        {/* </div> */}
       </div>
       
       <button className="btn" onClick={handleButtonClick}>

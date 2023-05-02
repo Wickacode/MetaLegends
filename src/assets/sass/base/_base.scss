@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
 
 @font-face {
-  font-family: 'Bronova';
-  src: url('../../fonts/bronova/otf/Bronova\ Regular.otf') format('opentype');
+  font-family: "Bronova";
+  src: url("../../fonts/bronova/otf/Bronova\ Regular.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
@@ -17,7 +17,7 @@
 
 body {
   background-color: #07041b;
-  font-family: 'Bronova', sans-serif;
+  font-family: "Bronova", sans-serif;
   color: white;
 }
 
@@ -34,16 +34,19 @@ a {
 }
 
 .title-with-gradient {
-  background: linear-gradient(264.63deg, #CF4A7A 15.41%, #6D3A88 94.87%);
+  background: linear-gradient(264.63deg, #cf4a7a 15.41%, #6d3a88 94.87%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 2em;
-        font-weight: bold;
-        text-transform: uppercase;
-        margin-bottom: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 50px;
 }
 
 p {
   font-size: 1.2em;
-        width: 700px;
+
+  .strongText {
+    font-weight: bold;
+  }
 }

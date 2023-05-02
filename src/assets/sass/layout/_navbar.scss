@@ -1,15 +1,105 @@
 #navbar {
-.linkList {
+  .linkList {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 4em;
 
+    
+
+
     img {
-        width: 150px;
+      width: 150px;
     }
 
-    ul {
+    .menuList {
+      display: flex;
+      gap: 6em;
+      font-size: 1em;
+      padding: 20px;
+      cursor: pointer;
+
+      li {
+        text-transform: uppercase;
+        letter-spacing: 4px;
+      }
+    }
+
+    .menuListBurger {
+        display: none;
+        width: 50px;
+        height: 50px;
+        border: 2px solid red;
+    }
+    
+    .socialLinks {
+      display: flex;
+      align-items: center;
+      gap: 0.5em;
+      padding: 20px;
+
+      .socialLinksButton {
+        background-image: linear-gradient(
+          to right top,
+          #480a5e,
+          #440b68,
+          #3d0e72,
+          #31127e,
+          #1b1789
+        );
+        color: #cfbebe;
+        padding: 10px;
+        font-size: 1.4em;
+        clip-path: polygon(65% 0, 100% 31%, 100% 100%, 0% 100%, 0 51%, 0% 0%);
+      }
+
+      .openSeaIcone::after {
+        content: "OpenSea";
+        font-size: 14px;
+        font-weight: bold;
+        margin: 0 10px;
+        vertical-align: middle;
+      }
+
+      img {
+        width: 23px;
+      }
+    }
+  }
+}
+
+//Responsive
+//Mobile
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  #navbar {
+    .linkList {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 4em;
+
+      .menuList {
+        display: none;
+      }
+
+      img {
+        width: 100px;
+      }
+
+      .menuListBurger {
+        display: flex;
+        width: 50px;
+        height: 50px;
+        border: 2px solid red;
+        color: #cfbebe;
+
+        i {
+            color: aliceblue;
+        }
+    }
+
+      ul {
         display: flex;
         gap: 6em;
         font-size: 1em;
@@ -17,64 +107,43 @@
         cursor: pointer;
 
         li {
-            text-transform: uppercase;
-            letter-spacing: 4px;
+          text-transform: uppercase;
+          letter-spacing: 4px;
         }
-    }
-.socialLinks {
-    display: flex;
-    align-items: center;
-    gap: 0.5em;
-    padding: 20px;
+      }
+      .socialLinks {
+        display: none;
+        align-items: center;
+        gap: 0.5em;
+        padding: 20px;
 
-    .socialLinksButton {
-        background-image: linear-gradient(to right top, #480a5e, #440b68, #3d0e72, #31127e, #1b1789);
-        color: #cfbebe;
-        padding: 10px;
-        font-size: 1.4em;
-        clip-path: polygon(65% 0, 100% 31%, 100% 100%, 0% 100%, 0 51%, 0% 0%);
-
-
-      }  
-
-    .openSeaIcone::after {
-        content: "OpenSea";
-  font-size: 14px;
-  font-weight: bold;
-  margin: 0 10px;
-  vertical-align: middle;
-    }
-      
-    img {
-        width: 23px;
+        .socialLinksButton {
+          background-image: linear-gradient(
+            to right top,
+            #480a5e,
+            #440b68,
+            #3d0e72,
+            #31127e,
+            #1b1789
+          );
+          color: #cfbebe;
+          padding: 10px;
+          font-size: 1.4em;
+          clip-path: polygon(65% 0, 100% 31%, 100% 100%, 0% 100%, 0 51%, 0% 0%);
         }
-      
+
+        .openSeaIcone::after {
+          content: "OpenSea";
+          font-size: 14px;
+          font-weight: bold;
+          margin: 0 10px;
+          vertical-align: middle;
+        }
+
+        img {
+          width: 23px;
+        }
+      }
+    }
+  }
 }
-
-}
-}
-
-//Effet de transition lors du clic sur les liens de navigation 
-
-.fade-enter {
-    opacity: 0;
-    transform: translateY(-50px);
-  }
-  
-  .fade-enter-active {
-    opacity: 1;
-    transform: translateY(0);
-    transition: all 500ms ease-in-out;
-  }
-  
-  .fade-exit {
-    opacity: 1;
-  }
-  
-  .fade-exit-active {
-    opacity: 0;
-    transform: translateY(-50px);
-    transition: all 500ms ease-in-out;
-  }
-
-

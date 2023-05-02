@@ -1,7 +1,7 @@
 import React from "react";
 import teamData from "../assets/data/team.json";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 export default function Team() {
   return (
@@ -11,9 +11,11 @@ export default function Team() {
           teamData[memberKey];
         return (
           <div key={memberKey} className="teamCard">
-            <div className="teamImgContainer">
-              <img className="cardImg" src={img} alt={name} />
+
+            <div id="teamImgContainer">
+              <img className="cardImg" src={img} alt={name} />             
             </div>
+
             <div className="teamInfoContainer">
               <h3>{name}</h3>
               {description && <p>{description}</p>}

@@ -1,40 +1,39 @@
 .homeContainer {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  
   background-image: url(../../../assets/images/bg/bg-image01.png);
   background-size: cover;
   background-position: center center;
 
   .homeContent {
-    display: flex;
-    justify-content: center;
+    @include flex-rules;
+    height: 70vh;
+    border: 2px solid yellow;
+
     .leftSpace {
-      margin: 80px 0 0 143px;
+      @include flex-rules;
+      flex-direction: column;
       width: 50%;
+      border: 3px solid greenyellow;
 
       p {
-        .strongText {
-          font-weight: bold;
-        }
+        
       }
     }
 
     //ImagesLot
-
+    
     .imagesLotContainer {
+      width: 50%;
+      height: inherit;
       position: relative;
-      width: 900px;
-      height: 90vh;
-
-      img {
-        width: 202px;
-      }
+      border: 2px solid white;
 
       .img01 {
         clip-path: polygon(65% 0, 100% 31%, 100% 100%, 0% 100%, 0 51%, 0% 0%);
         position: absolute;
-        top: 9%;
+        top: 0%;
         right: 64%;
         width: 247px;
       }
@@ -76,6 +75,84 @@
         top: 32%;
         right: 30%;
         width: 207px;
+      }
+    }
+  }
+}
+
+//Responsive Mobile
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .homeContainer {
+    .homeContent {
+      flex-wrap: wrap;
+      justify-content: center;
+      .leftSpace {
+        margin: 0;
+        width: 100%;
+        padding: 20px;
+
+        .title-with-gradient {
+          font-size: 1em;
+        }
+        p {
+          display: flex;
+          flex-wrap: wrap;
+          width: auto;
+          margin-top: 30px;
+          font-size: 13px;
+          .strongText {
+            font-weight: bold;
+          }
+        }
+      }
+
+      //ImagesLot
+
+      .imagesLotContainer {
+        position: relative;
+        width: 350px;
+        border: 2px solid blue;
+        height: 300px;
+
+        img {
+          width: 202px;
+        }
+
+        .img01 {
+          top: 2%;
+          right: 50%;
+          width: 148px;
+        }
+        .img02 {
+          top: 2%;
+          right: 9%;
+          width: 120px;
+        }
+
+        .img03 {
+          top: 18%;
+          right: 26%;
+          width: 170px;
+        }
+
+        .img04 {
+          top: 35%;
+          right: 58%;
+          width: 145px;
+        }
+
+        .img05 {
+          top: 35%;
+          right: 11%;
+          width: 148px;
+        }
+
+        .img06 {
+          top: 21%;
+    right: -5%;
+    width: 130px;
+        }
       }
     }
   }

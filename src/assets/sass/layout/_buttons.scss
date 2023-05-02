@@ -1,72 +1,81 @@
 //buttons
 .btn {
-    display: flex;
-    align-items: center;
-    background-color: #5375ef;
-    text-transform: uppercase;
-    border: none;
-    color: beige;
-    font-size: 1.6em;
-    gap: 0.5em;
-    position: absolute;
-      top: 85%;
-      right: 38%;
-      letter-spacing: 3px;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5375ef;
+  text-transform: uppercase;
+  border: none;
+  color: beige;
+  font-size: 1.6em;
+  gap: 0.5em;
+  width: fit-content;
+  letter-spacing: 3px;
+  cursor: pointer;
+  padding: 18px;
+  margin: auto;
+  border-radius: 10px;
+
+  img {
+    width: 40px;
+    margin-left: 10px;
+  }
+}
+
+.btn:hover {
+  animation: glowing 1300ms infinite;
+}
+
+.btnJoin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5375ef;
+  text-transform: uppercase;
+  border: none;
+  color: beige;
+  font-size: 1.6em;
+  gap: 0.5em;
+  letter-spacing: 3px;
+  cursor: pointer;
+  width: 500px;
+  margin: 80px auto;
+  padding: 18px;
+  border-radius: 10px;
+}
+.btnJoin:hover {
+  animation: glowing 1300ms infinite;
+}
+
+.btnBecome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5375ef;
+  text-transform: uppercase;
+  border: none;
+  color: beige;
+  font-size: 1.6em;
+  gap: 0.5em;
+  letter-spacing: 3px;
+  cursor: pointer;
+  width: 500px;
+  margin: 80px auto;
+  padding: 18px;
+  border-radius: 10px;
+}
+.btnBecome:hover {
+  animation: glowing 1300ms infinite;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .btn {
+    font-size: 1em;
+    top: 93%;
+    right: 9%;
+    letter-spacing: 1px;
     width: auto;
-    padding: 18px;
-    border-radius: 10px;
-
-    img {
-        width: 40px;
-        margin-left: 10px;
-    }
-    
-  }
-  
-  .btn:hover {
-    animation: glowing 1300ms infinite;
-  }
-
-  .btnJoin{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #5375ef;
-    text-transform: uppercase;
-    border: none;
-    color: beige;
-    font-size: 1.6em;
-    gap: 0.5em;
-    letter-spacing: 3px;
-    cursor: pointer;
-    width: 500px;
-    margin: 80px auto;
-    padding: 18px;
+    padding: 10px;
     border-radius: 10px;
   }
-  .btnJoin:hover {
-    animation: glowing 1300ms infinite;
-  }
-
-  .btnBecome {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #5375ef;
-    text-transform: uppercase;
-    border: none;
-    color: beige;
-    font-size: 1.6em;
-    gap: 0.5em;
-    letter-spacing: 3px;
-    cursor: pointer;
-    width: 500px;
-    margin: 80px auto;
-    padding: 18px;
-    border-radius: 10px;
-  }
-  .btnBecome:hover {
-    animation: glowing 1300ms infinite;
-  }
-  
+}

@@ -1,5 +1,5 @@
 .factionsContainer {
-  display: flex;
+  display: none;
   justify-content: space-around;
   height: 100vh;
   .factionsLeftBloc {
@@ -43,4 +43,12 @@
         margin-top: 50px;
     }
   }
+}
+
+ //Mobile
+ @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .factionsContainer {
+    display: none;
+  }
+  
 }
