@@ -1,31 +1,29 @@
-#navbar {
+nav {
+    border: 3px solid rgb(68, 162, 109);
+    padding: 0 5%;
+
   .linkList {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-rules;
     gap: 4em;
-
-    
-
 
     img {
       width: 150px;
     }
 
     .menuList {
-      display: flex;
+      @include flex-rules;
       gap: 6em;
       font-size: 1em;
-      padding: 20px;
       cursor: pointer;
 
       li {
         text-transform: uppercase;
         letter-spacing: 4px;
+
       }
     }
 
-    .menuListBurger {
+    .menuBurger {
         display: none;
         width: 50px;
         height: 50px;
@@ -68,6 +66,37 @@
   }
 }
 
+
+//Responsive Desktop
+@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+  ul.menuList {
+    display: none !important;
+  }
+
+  .socialLinks {
+    display: none !important;
+  }
+
+  .menuBurger {
+    display: flex !important;
+  }
+
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1500px) {
+    .linkList {
+        gap: 1em !important;
+    }
+    .menuList {
+    gap: 2em !important;
+
+    li {
+        letter-spacing: 1px;
+    }
+}
+}
+
+
 //Responsive
 //Mobile
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
@@ -78,10 +107,6 @@
       align-items: center;
       justify-content: center;
       gap: 4em;
-
-      .menuList {
-        display: none;
-      }
 
       img {
         width: 100px;
@@ -118,26 +143,11 @@
         padding: 20px;
 
         .socialLinksButton {
-          background-image: linear-gradient(
-            to right top,
-            #480a5e,
-            #440b68,
-            #3d0e72,
-            #31127e,
-            #1b1789
-          );
-          color: #cfbebe;
-          padding: 10px;
-          font-size: 1.4em;
-          clip-path: polygon(65% 0, 100% 31%, 100% 100%, 0% 100%, 0 51%, 0% 0%);
-        }
+          font-size: 1em;
+                }
 
         .openSeaIcone::after {
-          content: "OpenSea";
-          font-size: 14px;
-          font-weight: bold;
-          margin: 0 10px;
-          vertical-align: middle;
+          font-size: 12px;
         }
 
         img {
@@ -147,3 +157,7 @@
     }
   }
 }
+
+
+
+  

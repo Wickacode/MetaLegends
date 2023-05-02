@@ -1,7 +1,6 @@
 .homeContainer {
   display: flex;
   flex-direction: column;
-  
   background-image: url(../../../assets/images/bg/bg-image01.png);
   background-size: cover;
   background-position: center center;
@@ -9,21 +8,24 @@
   .homeContent {
     @include flex-rules;
     height: 70vh;
+    padding: 5%;
     border: 2px solid yellow;
 
     .leftSpace {
       @include flex-rules;
       flex-direction: column;
       width: 50%;
+      padding: 25px;
+      gap: 2em;
       border: 3px solid greenyellow;
 
-      p {
-        
+      h1 {
+        width: -webkit-fill-available;
       }
     }
 
     //ImagesLot
-    
+
     .imagesLotContainer {
       width: 50%;
       height: inherit;
@@ -33,48 +35,48 @@
       .img01 {
         clip-path: polygon(65% 0, 100% 31%, 100% 100%, 0% 100%, 0 51%, 0% 0%);
         position: absolute;
-        top: 0%;
-        right: 64%;
-        width: 247px;
+        top: 6%;
+        right: 47%;
+        width: 41%;
       }
       .img02 {
         clip-path: polygon(65% 0, 100% 34%, 100% 100%, 0% 100%, 0 51%, 0% 0%);
         position: absolute;
-        top: 10%;
-        right: 38%;
-        width: 240px;
+        top: 6%;
+        right: 11%;
+        width: 37%;
       }
 
       .img03 {
         clip-path: polygon(17% 0, 100% 0, 100% 100%, 0% 100%, 0 51%, 0 43%);
         position: absolute;
         top: 23%;
-        right: 46%;
-        width: 346px;
+        right: 21%;
+        width: 60%;
       }
 
       .img04 {
         clip-path: polygon(52% 0, 100% 0, 100% 100%, 0% 100%, 0 51%, 0 43%);
         position: absolute;
-        top: 43%;
-        right: 70%;
-        width: 203px;
+        top: 50%;
+        right: 59%;
+        width: 36%;
       }
 
       .img05 {
         clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%, 0 51%, 0 33%);
         position: absolute;
-        top: 43%;
-        right: 41%;
-        width: 250px;
+        top: 51%;
+        right: 11%;
+        width: 41%;
       }
 
       .img06 {
         clip-path: polygon(31% 0, 100% 0, 100% 100%, 0% 100%, 0 51%, 0 36%);
         position: absolute;
-        top: 32%;
-        right: 30%;
-        width: 207px;
+        top: 33%;
+        right: -3%;
+        width: 36%;
       }
     }
   }
@@ -150,10 +152,19 @@
 
         .img06 {
           top: 21%;
-    right: -5%;
-    width: 130px;
+          right: -5%;
+          width: 130px;
         }
       }
     }
   }
 }
+
+
+//Responsive Desktop
+
+// @media screen and (max-width: 980px) {
+//   .homeContent {
+//     flex-direction: column;
+//   }
+// }

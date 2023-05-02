@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+import MenuBurger from "./MenuBurger";
 import {
   faTwitter,
   faDiscord,
@@ -10,9 +11,8 @@ import OpenSeaLogo from "../assets/images/icone/openSeaLogo.png";
 
 export default function Navbar() {
 
-  const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <nav id="navbar">
+    <nav>
       <div className="linkList">
         <a href="/">
           <img src={LogoMetaLegends} alt="logo meta legends" />
@@ -34,7 +34,7 @@ export default function Navbar() {
             <a href="/">Team</a>
           </li>
         </ul>
-        <div className="menuListBurger"><FontAwesomeIcon icon="fa-solid fa-bars" /></div>
+        < MenuBurger />
         <div className="socialLinks">
           <a
             href="https://discord.gg/meta-life-889533275545149440"

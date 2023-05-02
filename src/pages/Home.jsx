@@ -1,4 +1,5 @@
 import React from "react";
+
 import ImagesLot from "../components/ImagesLot";
 import OpenSeaLogo from "../assets/images/icone/openSeaLogo.png";
 import Factions from "../pages/Factions";
@@ -14,6 +15,7 @@ export default function Home() {
 
   return (
     <div className="homeContainer">
+      
       <div className="homeContent">
         <div className="leftSpace">
           <h1>
