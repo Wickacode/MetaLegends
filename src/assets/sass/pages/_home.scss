@@ -9,7 +9,6 @@
     @include flex-rules;
     height: 70vh;
     padding: 5%;
-    border: 2px solid yellow;
 
     .leftSpace {
       @include flex-rules;
@@ -17,7 +16,6 @@
       width: 50%;
       padding: 25px;
       gap: 2em;
-      border: 3px solid greenyellow;
 
       h1 {
         width: -webkit-fill-available;
@@ -84,7 +82,7 @@
 
 //Responsive Mobile
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
   .homeContainer {
     .homeContent {
       flex-wrap: wrap;
@@ -101,7 +99,6 @@
           display: flex;
           flex-wrap: wrap;
           width: auto;
-          margin-top: 30px;
           font-size: 13px;
           .strongText {
             font-weight: bold;
@@ -160,11 +157,18 @@
   }
 }
 
-
 //Responsive Desktop
+@media only screen and (min-device-width: 500px) and (max-device-width: 1200px) {
+  .homeContent {
+    flex-direction: column;
+    .leftSpace {
+      flex-direction: row !important;
+      flex-wrap: wrap;
+      width: 100% !important;
 
-// @media screen and (max-width: 980px) {
-//   .homeContent {
-//     flex-direction: column;
-//   }
-// }
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}

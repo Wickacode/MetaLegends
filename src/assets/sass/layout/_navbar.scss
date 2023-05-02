@@ -1,5 +1,4 @@
 nav {
-    border: 3px solid rgb(68, 162, 109);
     padding: 0 5%;
 
   .linkList {
@@ -37,6 +36,7 @@ nav {
       padding: 20px;
 
       .socialLinksButton {
+        width: 50px;
         background-image: linear-gradient(
           to right top,
           #480a5e,
@@ -50,13 +50,16 @@ nav {
         font-size: 1.4em;
         clip-path: polygon(65% 0, 100% 31%, 100% 100%, 0% 100%, 0 51%, 0% 0%);
       }
-
+      .openSeaIcone {
+        width: 135px;
+      }
       .openSeaIcone::after {
         content: "OpenSea";
         font-size: 14px;
         font-weight: bold;
         margin: 0 10px;
         vertical-align: middle;
+        
       }
 
       img {
@@ -93,6 +96,7 @@ nav {
     li {
         letter-spacing: 1px;
     }
+
 }
 }
 
