@@ -61,7 +61,7 @@ export default function Factions() {
             className="socialLinkFactions socialDiscord"
             target="_blank"
             rel="noopener noreferrer"
-          > <span>Joins us on<strong>Discord</strong></span>
+          > <span>Joins us on <strong>Discord</strong></span>
             <FontAwesomeIcon className="socialDiscordIcone" icon={faDiscord} />
            </a> 
             <a
@@ -69,7 +69,7 @@ export default function Factions() {
             className="socialLinkFactions socialTwitter"
             target="_blank"
             rel="noopener noreferrer"
-          > <span>Joins us on<strong>Twitter</strong></span>
+          > <span>Joins us on <strong>Twitter</strong></span>
             <FontAwesomeIcon className="socialTwitterIcone" icon={faTwitter} />
           </a>
           

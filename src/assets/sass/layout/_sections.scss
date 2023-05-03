@@ -15,15 +15,15 @@
     }
 
     .sectionText {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    font-size: 1em;
-  }
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      font-size: 1em;
+    }
 
-  .sectionText1 p {
-    width: 100%;
-  }
+    .sectionText1 p {
+      width: 100%;
+    }
   }
 
   #secondSection {
@@ -61,132 +61,129 @@
 
 //Responsive Desktop
 @media only screen and (min-device-width: 900px) and (max-device-width: 1300px) {
+  .sectionsContainer {
+    gap: 5em !important;
 
-  #firstSection {
+    #firstSection {
+    padding: 0;
     .metaLegendsImg {
-
-      img{
-        width: 600px;
+      img {
+        width: 450px !important;
       }
-      
     }
   }
   #secondSection {
     .metaLifeImg {
-
-      img{
-        width: 600px;
+      img {
+        width: 500px !important;
       }
-      
+    }
+
+    .sectionText2 {
+      padding-right: 0 !important;
     }
   }
   #thirdSection {
+    gap: 6em !important;
     .metaVerseImg {
-
-      img{
-        width: 600px;
+      img {
+        width: 500px !important;
       }
-      
     }
 
-    .sectiontext3 {
-      margin-left: 40%;
+    .sectionText3 {
+      padding-right: 0 !important;
     }
   }
+  }
+  
 }
 
 //Responsive tablette
 @media only screen and (min-device-width: 500px) and (max-device-width: 900px) {
-
   .sectionsContainer {
-     #firstSection {
-    flex-wrap: wrap;
-    padding: 0;
-    
-    .metaLegendsImg {
-      img{
-        width: 400px !important;
-      }
-      
-    }
-  }
-  #secondSection {
-    flex-direction: column-reverse;
-    .metaLifeImg {
+    gap: 3em;
 
-      img{
-        width: 400px !important;
-      }
-      
-    }
-  }
-  #thirdSection {
-    flex-direction: column-reverse;
-    .metaVerseImg {
+    #firstSection {
+      flex-wrap: wrap;
+      padding: 0;
 
-      img{
-        width: 400px !important;
+      .metaLegendsImg {
+        img {
+          width: 400px !important;
+        }
       }
-      
     }
+    #secondSection {
+      flex-direction: column-reverse;
+      .metaLifeImg {
+        img {
+          width: 400px !important;
+        }
+      }
 
-    .sectiontext3 {
-      margin-left: 40%;
+      .sectionText2 {
+        padding-right: 0;
+      }
+    }
+    #thirdSection {
+      flex-direction: column-reverse;
+      .metaVerseImg {
+        img {
+          width: 400px !important;
+        }
+      }
+      .sectionText3 {
+        margin-left: 0%;
+        padding-right: 0;
+      }
     }
   }
-  }
- 
 }
 
-//Mobile
+// Responsive Mobile
 @media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
   .sectionsContainer {
     gap: 1.5em;
     margin-top: 0;
 
     #firstSection {
-    flex-wrap: wrap;
-    padding: 0;
-    
-    .metaLegendsImg {
-      img{
-        width: 200px !important;
-      }
-      
-    }
-  }
-  
-  #secondSection {
-    gap: 0 !important;
-    flex-direction: column-reverse;
+      flex-wrap: wrap;
+      padding: 0;
 
-    .metaLifeImg {
-      float: left;
-      margin-left: 0;
-      img{
-        width: 200px !important;
+      .metaLegendsImg {
+        img {
+          width: 200px !important;
+        }
       }
     }
-    .sectionText2 {
-      padding-right: 0 !important;
-      padding: 10px !important;
-    }
-  }
-  #thirdSection {
-    gap: 0px !important;
-    flex-direction: column-reverse;
-    .metaVerseImg {
-      img{
-        width: 200px !important;
+
+    #secondSection {
+      gap: 0 !important;
+      flex-direction: column-reverse;
+
+      .metaLifeImg {
+        float: left;
+        margin-left: 0;
+        img {
+          width: 200px !important;
+        }
+      }
+      .sectionText2 {
+        padding-right: 0 !important;
       }
     }
-    .sectionText3 {
-      padding-right: 0px !important;
-      padding: 10px !important;
+    #thirdSection {
+      gap: 0px !important;
+      flex-direction: column-reverse;
+      .metaVerseImg {
+        img {
+          width: 200px !important;
+        }
+      }
+      .sectionText3 {
+        padding-right: 0px !important;
+      }
     }
   }
-  }
-  
 }
-
-
