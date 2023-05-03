@@ -15,7 +15,7 @@ export default function Navbar() {
     <nav>
       <div className="linkList">
         <a href="/">
-          <img src={LogoMetaLegends} alt="logo meta legends" />
+          <img className="logoMetaLegends" src={LogoMetaLegends} alt="logo meta legends" />
         </a>
         <ul className="menuList">
           <li>

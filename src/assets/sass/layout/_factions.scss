@@ -1,54 +1,109 @@
 .factionsContainer {
-  display: none;
+  display: flex;
   justify-content: space-around;
-  height: 100vh;
+  margin: 50px 0;
+  gap: 3%;
+  @include max-width;
+
   .factionsLeftBloc {
     display: flex;
+    justify-content: center;
     flex-direction: column;
 
     .activeImg {
-      width: 300px;
+      width: 100%;
       margin-bottom: 20px;
       cursor: pointer;
     }
 
     .avatarsFactions {
-        display: flex;
-        justify-content: center;
-        gap: 1em;
+      @include flex-rules;
+      gap: 1em;
       img {
         background-image: url(../../images/icone/border.svg);
-        width: 80px;
+        width: 27%;
         cursor: pointer;
       }
     }
   }
 
   .factionsRightBloc {
-    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
     .emblems {
-        display: flex;
-        gap: 3em;
+      @include flex-rules;
+      justify-content: space-between;
 
       img {
         cursor: pointer;
-        width: 90px;
+        width: 70px;
       }
     }
 
     .textSection {
-        display: flex;
-        flex-direction: column;
-        gap: 2em;
-        margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+      padding: 20px;
+    }
+
+    .socialFactions {
+      display: flex;
+      gap: 2em;
+
+      .socialLinkFactions {
+        @include flex-rules;
+        margin-top: 30px;
+        padding: 13px;
+        gap: 10px;
+        font-size: 12px;
+        border-radius: 10px;
+      }
+
+      .socialDiscord {
+        font-size: 12px;
+        background-image: linear-gradient(
+          to right top,
+          #480a5e,
+          #440b68,
+          #3d0e72,
+          #31127e,
+          #1b1789
+        );
+      }
+      .socialDiscord:hover {
+        box-shadow: 0 0 32px rgba(159, 55, 208, 0.79);
+        transition: 0.5s;
+      }
+
+      .socialDiscordIcone {
+        font-size: 30px;
+      }
+    }
+    .socialTwitter {
+      font-size: 12px;
+      background-color: #10a6f8;
+    }
+    .socialTwitter:hover {
+      box-shadow: 0 0 32px rgba(16, 166, 248, 0.79);
+      transition: 0.5s;
+    }
+
+    .socialTwitterIcone {
+      font-size: 30px;
     }
   }
 }
 
- //Mobile
- @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+//Mobile
+@media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
   .factionsContainer {
-    display: none;
+    .socialFactions {
+      @include flex-rules;
+      flex-direction: column;
+      gap: 0 !important;
+    }
   }
-  
 }

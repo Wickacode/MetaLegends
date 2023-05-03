@@ -1,18 +1,23 @@
 .sectionsContainer {
-  display: none;
-  align-items: center;
-  justify-content: center;
+  // @include flex-rules;
+  display: NONE;
   flex-direction: column;
   margin-top: 80px;
+  padding: 0 5%;
 
   .sectionText {
     display: flex;
     flex-direction: column;
+    padding: 25px;
     font-size: 1em;
   }
+
+  .sectionText1 p {
+    width: 100%;
+  }
   #firstSection {
-    display: flex;
-    gap: 15em;
+    @include flex-rules;
+    // gap: 15em;
 
     .metaLegendsImg {
       img {
@@ -27,45 +32,75 @@
     .metaLifeImg {
       position: absolute;
       left: 0;
+      top: 145%;
       img {
         width: 80%;
       }
     }
 
-   .sectionText2 {
-    margin-left: 70%;
-    margin-top: 30px;
-   }
+    .sectionText2 {
+      margin-left: 50%;
+      margin-top: 90px;
+    }
   }
 
   #thirdSection {
     display: flex;
-    margin-right: -43%;
     margin-top: 15%;
 
     .metaVerseImg {
       position: absolute;
       left: 0;
-      top: 265%;
+      top: 210%;
 
       img {
         width: 70%;
       }
+    }
 
-      .sectionText {
-        .sectionText3 {
-          margin-left: 100%;
-          margin-top: 50px;
-        }
-      }
+    .sectionText3 {
+      margin-left: 50%;
     }
   }
 }
 
+//Responsive tablette
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 1500px) {
+  .sectionText p {
+    font-size: 15px;
+  }
+
+  #firstSection {
+    flex-wrap: wrap;
+  }
+
+  #secondSection {
+    flex-direction: column;
+
+    .metaLifeImg img {
+      opacity: 0.33;
+    }
+
+    .sectionText2 {
+      width: 100%;
+      margin-left: 0 !important;
+    }
+  }
+
+  #thirdSection  {
+   .metaVerseImg {
+    width: 50%;
+   }
+
+   .sectiontext3 {
+    margin-left: 40% !important;
+   }
+  }
+}
 //Mobile
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .sectionsContainer {
     display: none;
   }
-  
 }

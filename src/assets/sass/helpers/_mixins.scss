@@ -3,3 +3,7 @@
     align-items: center;
     justify-content: center;
 }
+
+@mixin max-width {
+    max-width: 1700px;
+}

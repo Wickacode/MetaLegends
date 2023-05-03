@@ -1,19 +1,24 @@
 .homeContainer {
   display: flex;
   flex-direction: column;
-  background-image: url(../../../assets/images/bg/bg-image01.png);
-  background-size: cover;
-  background-position: center center;
+  max-width: 1700px;
+  margin: auto;
+  // background-image: url(../../../assets/images/bg/bg-image01.png);
 
-  .homeContent {
+  .bg-menu {
+    background-image: url(../../../assets/images/bg/bg-image01.png);
+    background-size: cover;
+    background-position: center center;
+    
+    .homeContent {
     @include flex-rules;
     height: 70vh;
     padding: 5%;
 
-    .leftSpace {
+    .introduction {
       @include flex-rules;
       flex-direction: column;
-      width: 50%;
+      width: 60%;
       padding: 25px;
       gap: 2em;
 
@@ -22,61 +27,15 @@
       }
     }
 
-    //ImagesLot
-
     .imagesLotContainer {
-      width: 50%;
-      height: inherit;
-      position: relative;
-      border: 2px solid white;
+      width: auto;
 
-      .img01 {
-        clip-path: polygon(65% 0, 100% 31%, 100% 100%, 0% 100%, 0 51%, 0% 0%);
-        position: absolute;
-        top: 6%;
-        right: 47%;
-        width: 41%;
-      }
-      .img02 {
-        clip-path: polygon(65% 0, 100% 34%, 100% 100%, 0% 100%, 0 51%, 0% 0%);
-        position: absolute;
-        top: 6%;
-        right: 11%;
-        width: 37%;
-      }
-
-      .img03 {
-        clip-path: polygon(17% 0, 100% 0, 100% 100%, 0% 100%, 0 51%, 0 43%);
-        position: absolute;
-        top: 23%;
-        right: 21%;
-        width: 60%;
-      }
-
-      .img04 {
-        clip-path: polygon(52% 0, 100% 0, 100% 100%, 0% 100%, 0 51%, 0 43%);
-        position: absolute;
-        top: 50%;
-        right: 59%;
-        width: 36%;
-      }
-
-      .img05 {
-        clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%, 0 51%, 0 33%);
-        position: absolute;
-        top: 51%;
-        right: 11%;
-        width: 41%;
-      }
-
-      .img06 {
-        clip-path: polygon(31% 0, 100% 0, 100% 100%, 0% 100%, 0 51%, 0 36%);
-        position: absolute;
-        top: 33%;
-        right: -3%;
-        width: 36%;
+      .imagesLot {
+        width: 800px;
       }
     }
+  }
+  
   }
 }
 
@@ -84,21 +43,22 @@
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
   .homeContainer {
+    
     .homeContent {
       flex-wrap: wrap;
       justify-content: center;
-      .leftSpace {
+      padding: 0 !important;
+      width: 100%;
+      height: auto;
+      .introduction {
         margin: 0;
-        width: 100%;
-        padding: 20px;
+        width: 100% !important;
 
         .title-with-gradient {
-          font-size: 1em;
+          font-size: 0.5em;
         }
         p {
-          display: flex;
-          flex-wrap: wrap;
-          width: auto;
+          
           font-size: 13px;
           .strongText {
             font-weight: bold;
@@ -109,49 +69,11 @@
       //ImagesLot
 
       .imagesLotContainer {
-        position: relative;
-        width: 350px;
-        border: 2px solid blue;
-        height: 300px;
-
-        img {
-          width: 202px;
+        
+        .imagesLot{
+          width: 320px !important;
         }
-
-        .img01 {
-          top: 2%;
-          right: 50%;
-          width: 148px;
-        }
-        .img02 {
-          top: 2%;
-          right: 9%;
-          width: 120px;
-        }
-
-        .img03 {
-          top: 18%;
-          right: 26%;
-          width: 170px;
-        }
-
-        .img04 {
-          top: 35%;
-          right: 58%;
-          width: 145px;
-        }
-
-        .img05 {
-          top: 35%;
-          right: 11%;
-          width: 148px;
-        }
-
-        .img06 {
-          top: 21%;
-          right: -5%;
-          width: 130px;
-        }
+        
       }
     }
   }
@@ -160,14 +82,15 @@
 //Responsive Desktop
 @media only screen and (min-device-width: 500px) and (max-device-width: 1200px) {
   .homeContent {
-    flex-direction: column;
-    .leftSpace {
-      flex-direction: row !important;
-      flex-wrap: wrap;
+    flex-wrap: wrap;
+    .introduction {
       width: 100% !important;
+    }
 
-      p {
-        font-size: 16px;
+    //ImagesLot
+    .imagesLotContainer {
+      .imagesLot {
+        width: 500px !important;
       }
     }
   }

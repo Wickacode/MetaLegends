@@ -4,10 +4,11 @@
 
   .mcTopBloc {
     display: flex;
+    border: 2px solid red;
     align-items: center;
     justify-content: center;
     gap: 15em;
-    margin-top: 50px;
+    margin: 50px auto;
   }
 
   .mockups {

@@ -50,3 +50,14 @@ p {
     font-weight: bold;
   }
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
+  .title-with-gradient {
+    font-size: 1em;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 0.7em;
+  }
+}

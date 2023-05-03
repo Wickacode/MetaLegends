@@ -1,8 +1,6 @@
 //buttons
 .btn {
-  display: none;
-  align-items: center;
-  justify-content: center;
+  @include flex-rules;
   background-color: #5375ef;
   text-transform: uppercase;
   border: none;
@@ -72,8 +70,6 @@
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .btn {
     font-size: 1em;
-    top: 93%;
-    right: 9%;
     letter-spacing: 1px;
     width: auto;
     padding: 10px;
