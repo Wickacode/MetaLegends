@@ -1,7 +1,6 @@
 .homeContainer {
   display: flex;
   flex-direction: column;
-  max-width: 1700px;
   margin: auto;
   // background-image: url(../../../assets/images/bg/bg-image01.png);
 
@@ -12,8 +11,10 @@
     
     .homeContent {
     @include flex-rules;
+    @include max-width;
+    margin: auto;
+    padding: 20px;
     height: 70vh;
-    padding: 5%;
 
     .introduction {
       @include flex-rules;

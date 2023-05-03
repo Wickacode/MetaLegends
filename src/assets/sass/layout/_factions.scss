@@ -1,8 +1,9 @@
 .factionsContainer {
   display: flex;
   justify-content: space-around;
-  margin: 50px 0;
+  margin: auto;
   gap: 3%;
+  padding: 40px;
   @include max-width;
 
   .factionsLeftBloc {
@@ -104,6 +105,12 @@
       @include flex-rules;
       flex-direction: column;
       gap: 0 !important;
+    }
+
+    .factionsRightBloc {
+      .emblems {
+        overflow: hidden;
+      }
     }
   }
 }

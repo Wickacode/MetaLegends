@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 import ImagesLot from "../components/ImagesLot";
 import OpenSeaLogo from "../assets/images/icone/openSeaLogo.png";
 import Factions from "../pages/Factions";
-import Sections from "./MetaLegends";
+import Sections from "./Sections";
 import MetaConnect from "./MetaConnect";
 import LegendsZone from "./LegendsZone";
 import Team from "../components/Team";
