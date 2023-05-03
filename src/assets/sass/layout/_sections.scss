@@ -97,20 +97,35 @@
 
 //Responsive tablette
 @media only screen and (min-device-width: 500px) and (max-device-width: 900px) {
+
+  .sectionsContainer {
+     #firstSection {
+    flex-wrap: wrap;
+    padding: 0;
+    
+    .metaLegendsImg {
+      img{
+        width: 400px !important;
+      }
+      
+    }
+  }
   #secondSection {
+    flex-direction: column-reverse;
     .metaLifeImg {
 
       img{
-        width: 400px;
+        width: 400px !important;
       }
       
     }
   }
   #thirdSection {
+    flex-direction: column-reverse;
     .metaVerseImg {
 
       img{
-        width: 400px;
+        width: 400px !important;
       }
       
     }
@@ -119,12 +134,15 @@
       margin-left: 40%;
     }
   }
+  }
+ 
 }
 
 //Mobile
 @media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
   .sectionsContainer {
     gap: 1.5em;
+    margin-top: 0;
 
     #firstSection {
     flex-wrap: wrap;

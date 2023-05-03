@@ -98,19 +98,80 @@
   }
 }
 
-//Mobile
-@media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
-  .factionsContainer {
-    .socialFactions {
-      @include flex-rules;
-      flex-direction: column;
-      gap: 0 !important;
-    }
 
-    .factionsRightBloc {
-      .emblems {
-        overflow: hidden;
-      }
-    }
+//Responsive Desktop
+@media only screen and (min-device-width: 900px) and (max-device-width: 1300px) {
+.emblems {
+  overflow: hidden;
+}
+}
+
+//Responsive tablette
+@media only screen and (min-device-width: 500px) and (max-device-width: 900px) {
+  .emblems {
+    overflow: hidden;
   }
 }
+
+//Mobile
+@media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
+  .factionsContainer{
+    padding: 10px;
+
+    .factionsRightBloc {
+      .textSection {
+        padding: 5px;
+      }
+    }
+    .emblems {
+    overflow: hidden;
+  }
+
+  .socialFactions {
+    gap: 10px !important;
+
+    .socialLinkFactions {
+      @include flex-rules;
+      margin-top: 30px;
+      padding: 0;
+      gap: 5px;
+      font-size: 12px;
+      border-radius: 10px;
+      width: 50px;
+      height: 35px;
+    }
+
+    .socialDiscordIcone {
+      font-size: 18px !important;
+    }
+    .socialTwitterIcone {
+      font-size: 20px !important;
+    }
+    span {
+      display: none;
+    }
+  }
+  }
+  
+}
+
+
+
+
+
+// //Mobile
+// @media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
+//   .factionsContainer {
+//     .socialFactions {
+//       @include flex-rules;
+//       flex-direction: column;
+//       gap: 0 !important;
+//     }
+
+//     .factionsRightBloc {
+//       .emblems {
+//         overflow: hidden;
+//       }
+//     }
+//   }
+// }

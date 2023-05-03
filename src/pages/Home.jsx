@@ -20,7 +20,7 @@ export default function Home() {
         <Navbar />
         <div className="homeContent">
           <div className="introduction">
-            <h1>
+            <h1 className="">
               <span className="title-with-gradient">12345 Legends</span> <br />
               to Save humanity
             </h1>
