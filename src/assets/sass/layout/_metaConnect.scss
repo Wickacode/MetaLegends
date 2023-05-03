@@ -1,24 +1,21 @@
 .metaConnectContainer {
-  display: none;
+  @include flex-rules;
   flex-direction: column;
 
   .mcTopBloc {
-    display: flex;
-    border: 2px solid red;
-    align-items: center;
-    justify-content: center;
+    @include max-width;
+    @include flex-rules;
     gap: 15em;
     margin: 50px auto;
   }
 
   .mockups {
-    margin-top: 50px;
+    margin-top: 20px;
     display: flex;
     gap: 2em;
 
     .mockup1 {
       width: 220px;
-
     }
 
     .mockup2 {
@@ -27,67 +24,216 @@
   }
 
   .mcBottomBloc {
-  display: flex;
-  align-items: center;
-  margin: auto;
-  margin-top: 100px;
+    @include max-width;
+    @include flex-rules;
+    margin-top: 100px;
 
-  .textZone {
-    display: flex;
-    flex-direction: column;
-    gap: 4em;
+    .textZone {
+      display: flex;
+      flex-direction: column;
+      gap: 4em;
 
-    .firstTextZone{
+      .firstTextZone {
         margin-right: 150px;
-    }
+      }
 
-    .titleRight {
-      margin-bottom: 30px;
-      font-size: 2em;
-      text-transform: uppercase;
+      .titleRight {
+        margin-bottom: 30px;
+        font-size: 2em;
+        text-transform: uppercase;
+      }
+      .titleLeft {
+        margin-bottom: 30px;
+        font-size: 2em;
+        text-transform: uppercase;
+        text-align: end;
+      }
+      .paragraphZone {
+        width: 440px;
+      }
     }
-    .titleLeft {
-      margin-bottom: 30px;
-      font-size: 2em;
-      text-transform: uppercase;
-      text-align: end;
-    }
-    .paragraphZone {
-      width: 440px;
-    }
-
-    
   }
-}
 }
 
 .mockup3 {
-      img {
-        width: 400px;
-        margin: 0 80px;
-      }
-    }
-
-    
-    //Mobile
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-  .metaConnectContainer {
-    display: none;
+  img {
+    width: 400px;
+    margin: 0 80px;
   }
-  
 }
 
 //Responsive Desktop
 @media only screen and (min-device-width: 900px) and (max-device-width: 1300px) {
+  .metaConnectContainer {
 
+    .mcTopBloc {
+      @include max-width;
+      flex-direction: row;
+      gap: 4em !important;
+      margin: 30px auto;
+      padding: 50px;
+    }
+
+    .mockups {
+      .mockup1 {
+        width: 140px;
+      }
+
+      .mockup2 {
+        width: 140px;
+      }
+    }
+
+    .mcBottomBloc {
+      @include max-width;
+      flex-direction: row;
+      margin-top: 30px;
+      padding: 0 10px;
+      .textZone {
+        gap: 3em;
+
+        .firstTextZone {
+          margin-right: none;
+        }
+        .titleRight {
+          margin-bottom: 20px;
+          font-size: 1em;
+          text-align: center;
+        }
+        .titleLeft {
+          margin-bottom: 20px;
+          font-size: 1em;
+          text-align: center;
+        }
+        .paragraphZone {
+          width: 80%;
+          margin: auto;
+        }
+      }
+    }
+  }
+
+  .mockup3 {
+    img {
+      width: 230px;
+      margin: 50px 0;
+    }
+  }
 }
 
 //Responsive tablette
 @media only screen and (min-device-width: 500px) and (max-device-width: 900px) {
+  .metaConnectContainer {
+    flex-direction: column;
 
+    .mcTopBloc {
+      @include max-width;
+      flex-direction: column-reverse;
+      gap: 4em !important;
+      margin: 30px auto;
+    }
+
+    .mockups {
+      .mockup1 {
+        width: 140px;
+      }
+
+      .mockup2 {
+        width: 140px;
+      }
+    }
+
+    .mcBottomBloc {
+      @include max-width;
+      flex-direction: column;
+      margin-top: 30px;
+      padding: 0 10px;
+      .textZone {
+        gap: 2em;
+
+        .firstTextZone {
+          margin-right: none;
+        }
+        .titleRight {
+          margin-bottom: 20px;
+          font-size: 1em;
+          text-align: center;
+        }
+        .titleLeft {
+          margin-bottom: 20px;
+          font-size: 1em;
+          text-align: center;
+        }
+        .paragraphZone {
+          width: 70%;
+          margin: auto;
+        }
+      }
+    }
+  }
+
+  .mockup3 {
+    img {
+      width: 220px;
+      margin: 50px 0;
+    }
+  }
 }
 
 //Mobile
 @media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
- 
+  .metaConnectContainer {
+    flex-direction: column;
+
+    .mcTopBloc {
+      @include max-width;
+      flex-direction: column-reverse;
+      gap: 2em !important;
+      margin: 30px auto;
+    }
+
+    .mockups {
+      .mockup1 {
+        width: 75px;
+      }
+
+      .mockup2 {
+        width: 75px;
+      }
+    }
+
+    .mcBottomBloc {
+      @include max-width;
+      flex-direction: column;
+      margin-top: 30px;
+      padding: 0 10px;
+      .textZone {
+        gap: 2em;
+
+        .firstTextZone {
+          margin-right: none;
+        }
+        .titleRight {
+          margin-bottom: 20px;
+          font-size: 1em;
+          text-align: center;
+        }
+        .titleLeft {
+          margin-bottom: 20px;
+          font-size: 1em;
+          text-align: center;
+        }
+        .paragraphZone {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .mockup3 {
+    img {
+      width: 150px;
+      margin: 30px 0;
+    }
+  }
 }
