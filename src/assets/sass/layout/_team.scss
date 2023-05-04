@@ -1,13 +1,14 @@
 .teamContainer {
-  display: flex;
+  @include flex-rules;
   flex-wrap: wrap;
-  justify-content: center;
   margin-top: 80px;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .teamCard {
   position: relative;
-  width: 280px;
+  width: 250px;
   height: 420px;
   margin: 30px;
   border-radius: 10px;
@@ -16,7 +17,6 @@
   #teamImgContainer {
     height: 100%;
     position: relative;
-    border: 2px solid red;
     -webkit-clip-path: polygon(
       84% 0,
       100% 16%,
@@ -32,8 +32,6 @@
       object-fit: cover;
       cursor: pointer;
     }
-    
- 
   }
 }
 
@@ -86,25 +84,203 @@
   }
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-  
-  .teamContainer {
-    display: none;
-   
-  }
-}
-
 //Responsive Desktop
 @media only screen and (min-device-width: 900px) and (max-device-width: 1300px) {
+  .teamContainer {
+    @include flex-rules;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    max-width: 1200px;
+    margin: auto;
+    gap: 0;
+  }
 
+  .teamCard {
+    width: 30%;
+    height: 370px;
+    padding: 10px;
+    margin: 0;
+
+    #teamImgContainer {
+      .cardImg {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+  .teamInfoContainer {
+    padding: 10px;
+    position: relative;
+    h3 {
+      font-size: 1.5rem;
+      top: -330px;
+    }
+    p {
+      font-size: 16px;
+      margin: 10px 0;
+      left: -19px;
+      top: -315px;
+    }
+    a {
+      font-size: 18px;
+
+      .faInstagram,
+      .faTwitter {
+        padding: 15px;
+      }
+
+      .faInstagram {
+        position: absolute;
+        top: -50px;
+        left: 40px;
+      }
+
+      .faTwitter {
+        position: absolute;
+        top: -50px;
+        left: 90px;
+      }
+    }
+  }
 }
 
 //Responsive tablette
 @media only screen and (min-device-width: 500px) and (max-device-width: 900px) {
+  .teamContainer {
+    @include flex-rules;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    max-width: 1200px;
+    margin: auto;
+    gap: 0;
+  }
 
+  .teamCard {
+    width: 44%;
+    height: 300px;
+    padding: 10px;
+    margin: 0;
+
+    #teamImgContainer {
+      .cardImg {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+  .teamInfoContainer {
+    padding: 10px;
+    position: relative;
+    h3 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      position: absolute;
+      top: -250px;
+      color: #4d308d;
+    }
+    p {
+      font-size: 16px;
+      margin: 10px 0;
+      position: absolute;
+      left: -19px;
+      top: -235px;
+      color: #4d308d;
+    }
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 15px;
+      color: #fbefef;
+
+      .faInstagram,
+      .faTwitter {
+        padding: 14px;
+      }
+
+      .faInstagram {
+        position: absolute;
+        top: -50px;
+        left: 40px;
+      }
+
+      .faTwitter {
+        position: absolute;
+        top: -50px;
+        left: 90px;
+      }
+    }
+  }
 }
 
 //Mobile
 @media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
- 
+  .teamContainer {
+    @include flex-rules;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    max-width: 1200px;
+    margin: auto;
+    gap: 0;
+  }
+
+  .teamCard {
+    width: 47%;
+    height: 190px;
+    padding: 10px;
+    margin: 0;
+
+    #teamImgContainer {
+      .cardImg {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+  .teamInfoContainer {
+    padding: 10px;
+    position: relative;
+    h3 {
+      font-size: 1.3rem;
+      font-weight: bold;
+      position: absolute;
+      top: -160px;
+      color: #4d308d;
+    }
+    p {
+      font-size: 16px;
+      margin: 10px 0;
+      position: absolute;
+      left: -4px;
+      top: -145px;
+      color: #4d308d;
+    }
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      color: #fbefef;
+
+      .faInstagram,
+      .faTwitter {
+        padding: 12px;
+      }
+
+      .faInstagram {
+        position: absolute;
+        top: -40px;
+        left: 20px;
+      }
+
+      .faTwitter {
+        position: absolute;
+        top: -40px;
+        left: 73px;
+      }
+    }
+  }
 }

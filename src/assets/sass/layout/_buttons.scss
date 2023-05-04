@@ -45,9 +45,7 @@
 }
 
 .btnBecome {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex-rules;
   background-color: #5375ef;
   text-transform: uppercase;
   border: none;
@@ -85,6 +83,15 @@
     margin: 40px auto;
     padding: 18px;
   }
+
+  .btnBecome {
+    font-size: 1.4em;
+    gap: 0.5em;
+    letter-spacing: 2px;
+    width: auto;
+    margin: 40px auto;
+    padding: 18px;
+  }
 }
 
 //Responsive tablette
@@ -97,11 +104,29 @@
     margin: 50px auto;
     padding: 15px;
   }
+
+  .btnBecome {
+    font-size: 1em;
+    gap: 0.5em;
+    letter-spacing: 2px;
+    width: auto;
+    margin: 50px auto;
+    padding: 15px;
+  }
 }
 
 //Mobile
 @media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
   .btnJoin {
+    font-size: 0.7em;
+    gap: 0.5em;
+    letter-spacing: 2px;
+    width: auto;
+    margin: 40px auto;
+    padding: 15px;
+  }
+
+  .btnBecome {
     font-size: 0.7em;
     gap: 0.5em;
     letter-spacing: 2px;

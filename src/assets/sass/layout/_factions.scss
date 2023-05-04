@@ -5,6 +5,7 @@
   gap: 3%;
   padding: 40px;
   @include max-width;
+  margin-top: 50px;
 
   .factionsLeftBloc {
     display: flex;
@@ -101,15 +102,87 @@
 
 //Responsive Desktop
 @media only screen and (min-device-width: 900px) and (max-device-width: 1300px) {
-.emblems {
-  overflow: hidden;
-}
+  .factionsContainer{
+    padding: 10px;
+
+    .factionsRightBloc {
+      .textSection {
+        padding: 5px;
+      }
+    }
+    .emblems {
+    overflow: hidden;
+  }
+
+  .factionsParagraph {
+    text-align: left;
+    padding: 0;
+  }
+
+  .socialFactions {
+    gap: 1em !important;
+
+    .socialLinkFactions {
+      @include flex-rules;
+      margin-top: 30px;
+      padding: 0;
+      font-size: 12px;
+      height: 35px;
+    }
+
+    .socialDiscordIcone {
+      font-size: 22px !important;
+    }
+    .socialTwitterIcone {
+      font-size: 20px !important;
+    }
+    span {
+      display: flex;
+    }
+  }
+  }
 }
 
 //Responsive tablette
 @media only screen and (min-device-width: 500px) and (max-device-width: 900px) {
-  .emblems {
+  .factionsContainer{
+    padding: 10px;
+
+    .factionsRightBloc {
+      .textSection {
+        padding: 5px;
+      }
+    }
+    .emblems {
     overflow: hidden;
+  }
+
+  .factionsParagraph {
+    text-align: left;
+    padding: 0;
+  }
+
+  .socialFactions {
+    gap: 1em !important;
+
+    .socialLinkFactions {
+      @include flex-rules;
+      margin-top: 30px;
+      padding: 0;
+      font-size: 12px;
+      height: 35px;
+    }
+
+    .socialDiscordIcone {
+      font-size: 18px !important;
+    }
+    .socialTwitterIcone {
+      font-size: 20px !important;
+    }
+    span {
+      display: none;
+    }
+  }
   }
 }
 
@@ -127,8 +200,13 @@
     overflow: hidden;
   }
 
+  .factionsParagraph {
+    text-align: left;
+    padding: 0;
+  }
+  
   .socialFactions {
-    gap: 0 !important;
+    gap: 1em !important;
 
     .socialLinkFactions {
       @include flex-rules;
@@ -155,21 +233,3 @@
 
 
 
-
-
-// //Mobile
-// @media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
-//   .factionsContainer {
-//     .socialFactions {
-//       @include flex-rules;
-//       flex-direction: column;
-//       gap: 0 !important;
-//     }
-
-//     .factionsRightBloc {
-//       .emblems {
-//         overflow: hidden;
-//       }
-//     }
-//   }
-// }

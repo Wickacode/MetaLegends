@@ -41,7 +41,7 @@ export default function Factions() {
         </div>
         <div className="textSection">
           <h2>Celestials</h2>
-          <p>
+          <p className="factionsParagraph">
             Great guardians of the Metaverse, the Celestials are the most
             powerful of all classes with an influence and a power that is close
             to the Gods.

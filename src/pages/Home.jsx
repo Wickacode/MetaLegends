@@ -56,7 +56,7 @@ export default function Home() {
       <Sections />
       <MetaConnect />
       <LegendsZone />
-      {/* <Team /> */}
+      <Team />
     </div>
   );
 }

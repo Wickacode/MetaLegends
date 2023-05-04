@@ -1,9 +1,13 @@
 .metaConnectContainer {
+  background-image: url("../../images/bg/bg-image02.png");
+  object-fit: cover;
+  background-position: center;
   @include flex-rules;
   flex-direction: column;
 
   .mcTopBloc {
-    @include max-width;
+    max-width: 1300px;
+
     @include flex-rules;
     gap: 15em;
     margin: 50px auto;
@@ -24,7 +28,7 @@
   }
 
   .mcBottomBloc {
-    @include max-width;
+    max-width: 1300px;
     @include flex-rules;
     margin-top: 100px;
 
@@ -49,7 +53,7 @@
         text-align: end;
       }
       .paragraphZone {
-        width: 440px;
+        width: 340px;
       }
     }
   }
@@ -57,7 +61,7 @@
 
 .mockup3 {
   img {
-    width: 400px;
+    width: 300px;
     margin: 0 80px;
   }
 }
@@ -65,7 +69,6 @@
 //Responsive Desktop
 @media only screen and (min-device-width: 900px) and (max-device-width: 1300px) {
   .metaConnectContainer {
-
     .mcTopBloc {
       @include max-width;
       flex-direction: row;

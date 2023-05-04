@@ -1,48 +1,140 @@
-.legendsZoneContainer{
-    display: none;
-margin-top: 90px;
-    .legendsZoneTitle {
-        font-size: 3.5em;
-        text-align: center;
-    }
-    .legendsZoneImg {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 30%;
-        margin: auto;
-
-        .legendsZoneImg01{
-            margin-bottom: -86px;
+.legendsZoneContainer {
+    background-image: url("../../images/bg/bg-image03.png");
+    object-fit: cover;
+    background-position: center;
+  @include flex-rules;
+  flex-direction: column;
+  margin-top: 90px;
+   .legendsZoneContainer {
+        margin-top: 40px;
+        .legendsZoneTitle {
+          font-size: 2.2em;
         }
-    }
+        .legendsZoneImg {
+          width: 100%;
+          margin: auto;
+    
+          .legendsZoneImg01 {
+            width: 420px;
+            margin-bottom: -50px;
+          }
+    
+          .legendsZoneImg02 {
+            width: 320px;
+          }
+        }
+    
+        .legendsZoneText {
+          text-align: center;
+          margin: 50px auto;
+          max-width: 700px;
+        }
+      }
+  .legendsZoneTitle {
+    font-size: 3.5em;
+    text-align: center;
+  }
+  .legendsZoneImg {
+    @include flex-rules;
+    flex-direction: column;
+    width: 30%;
+    margin: auto;
 
-    .legendsZoneText {
-        text-align: center;
-        margin: 50px auto;
-
+    .legendsZoneImg01 {
+      margin-bottom: -86px;
     }
+  }
+
+  .legendsZoneText {
+    text-align: center;
+    margin: 50px auto;
+    max-width: 700px;
+  }
 }
 
-    //Mobile
-    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-        .legendsZoneContainer {
-          display: none;
-        }
-        
-      }
-
-      //Responsive Desktop
+//Responsive Desktop
 @media only screen and (min-device-width: 900px) and (max-device-width: 1300px) {
-
+    .legendsZoneContainer {
+        margin-top: 40px;
+        .legendsZoneTitle {
+          font-size: 2.2em;
+        }
+        .legendsZoneImg {
+          width: 100%;
+          margin: auto;
+    
+          .legendsZoneImg01 {
+            width: 620px;
+            margin-bottom: -60px;
+          }
+    
+          .legendsZoneImg02 {
+            width: 420px;
+          }
+        }
+    
+        .legendsZoneText {
+          text-align: center;
+          margin: 50px auto;
+          max-width: 700px;
+        }
+      }
 }
 
 //Responsive tablette
 @media only screen and (min-device-width: 500px) and (max-device-width: 900px) {
-
+    .legendsZoneContainer {
+        margin-top: 40px;
+        .legendsZoneTitle {
+          font-size: 2.2em;
+        }
+        .legendsZoneImg {
+          width: 100%;
+          margin: auto;
+    
+          .legendsZoneImg01 {
+            width: 420px;
+            margin-bottom: -50px;
+          }
+    
+          .legendsZoneImg02 {
+            width: 320px;
+          }
+        }
+    
+        .legendsZoneText {
+          text-align: center;
+          margin: 50px auto;
+          max-width: 700px;
+        }
+      }
 }
 
 //Mobile
 @media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
- 
+  .legendsZoneContainer {
+    margin-top: 40px;
+    .legendsZoneTitle {
+      font-size: 1.8em;
+    }
+    .legendsZoneImg {
+      width: 100%;
+      margin: auto;
+
+      .legendsZoneImg01 {
+        width: 220px;
+        margin-bottom: -56px;
+      }
+
+      .legendsZoneImg02 {
+        width: 220px;
+      }
+    }
+
+    .legendsZoneText {
+      text-align: center;
+      margin: 50px auto;
+      max-width: 700px;
+    }
+  }
 }
