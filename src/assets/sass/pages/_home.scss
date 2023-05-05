@@ -26,7 +26,7 @@
       @include flex-rules;
       @include max-width;
       margin: auto;
-      padding: 20px;
+      padding: 60px 20px;
 
       .introduction {
         @include flex-rules;
@@ -67,6 +67,7 @@
 @media only screen and (min-device-width: 900px) and (max-device-width: 1300px) {
   .homeContainer {
     .bg-menu {
+      padding: 0;
       .homeContent {
         @include flex-rules;
         @include max-width;
@@ -84,8 +85,8 @@
         }
 
         .imagesLotContainer {
-          .imagesLot {
-            width: 820px !important;
+          .card {
+            width: auto;
           }
         }
       }
@@ -97,6 +98,7 @@
 @media only screen and (min-device-width: 500px) and (max-device-width: 900px) {
   .homeContainer {
     .bg-menu {
+      padding: 0;
       .homeContent {
         @include flex-rules;
         @include max-width;
@@ -114,8 +116,8 @@
         }
 
         .imagesLotContainer {
-          .imagesLot {
-            width: 520px !important;
+          .card {
+            width: auto;
           }
         }
       }
