@@ -4,9 +4,23 @@
   margin: auto;
 
   .bg-menu {
-    background-image: url(../../../assets/images/bg/bg-image01.png);
-    background-size: cover;
-    background-position: center center;
+    background-image: linear-gradient(
+      to top,
+      rgba(7, 4, 27, 0),
+      rgba(7, 4, 27, 0.3) 80%,
+      rgba(7, 4, 27, 1)
+    ),
+    linear-gradient(
+      to bottom,
+      rgba(7, 4, 27, 0),
+      rgba(7, 4, 27, 0.3) 80%,
+      rgba(7, 4, 27, 1)
+    ),
+    url("../../../assets/images/bg/bg-image01.png");
+  background-position: center top, center bottom, center center;
+  background-size: 100% auto, 100% auto, cover;
+  height: auto;
+  padding: 40px;
 
     .homeContent {
       @include flex-rules;
@@ -27,31 +41,23 @@
       }
 
       .imagesLotContainer {
-        
-        
-        
         .card {
           width: 650px;
-        height: 500px;
-        perspective: 1000px;
+          height: 500px;
+          perspective: 1000px;
 
           .contentCard {
-          width: 100%;
-          height: 100%;
-          overflow: hidden;
-          transition: all 0.15s ease-out;
-          img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            transition: all 0.15s ease-out;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
           }
-          
-          
         }
-        }
-
-        
-        
       }
     }
   }
@@ -138,8 +144,22 @@
         }
 
         .imagesLotContainer {
-          .imagesLot {
-            width: 300px;
+          .card {
+            width: auto;
+            height: auto;
+            perspective: 1000px;
+
+            .contentCard {
+              width: 100%;
+              height: 100%;
+              overflow: hidden;
+              transition: all 0.15s ease-out;
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
           }
         }
       }

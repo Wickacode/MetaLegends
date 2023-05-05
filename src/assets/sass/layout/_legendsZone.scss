@@ -1,35 +1,53 @@
-.legendsZoneContainer {
-    background-image: url("../../images/bg/bg-image03.png");
-    object-fit: cover;
-    background-position: center;
+.bgLegendZone {
+  .legendsZoneContainer {
+    background-image: linear-gradient(
+        to top,
+        rgba(7, 4, 27, 0),
+        rgba(7, 4, 27, 0.3) 80%,
+        rgba(7, 4, 27, 1)
+      ),
+      linear-gradient(
+        to bottom,
+        rgba(7, 4, 27, 0),
+        rgba(7, 4, 27, 0.3) 80%,
+        rgba(7, 4, 27, 1)
+      ),
+      url("../../images/bg/bg-image03.png");
+    background-position: center top, center bottom, center center;
+    background-size: 100% auto, 100% auto, cover;
+    height: auto;
+    padding: 40px;
+  }
+
+  .legendsZoneContainer {
   @include flex-rules;
   flex-direction: column;
   margin-top: 90px;
-   .legendsZoneContainer {
-        margin-top: 40px;
-        .legendsZoneTitle {
-          font-size: 2.2em;
-        }
-        .legendsZoneImg {
-          width: 100%;
-          margin: auto;
-    
-          .legendsZoneImg01 {
-            width: 420px;
-            margin-bottom: -50px;
-          }
-    
-          .legendsZoneImg02 {
-            width: 320px;
-          }
-        }
-    
-        .legendsZoneText {
-          text-align: center;
-          margin: 50px auto;
-          max-width: 700px;
-        }
+  .legendsZoneContainer {
+    margin-top: 40px;
+    .legendsZoneTitle {
+      font-size: 2.2em;
+    }
+    .legendsZoneImg {
+      width: 100%;
+      margin: auto;
+
+      .legendsZoneImg01 {
+        width: 420px;
+        margin-bottom: -50px;
       }
+
+      .legendsZoneImg02 {
+        width: 320px;
+      }
+    }
+
+    .legendsZoneText {
+      text-align: center;
+      margin: 50px auto;
+      max-width: 700px;
+    }
+  }
   .legendsZoneTitle {
     font-size: 3.5em;
     text-align: center;
@@ -51,63 +69,66 @@
     max-width: 700px;
   }
 }
+}
+
+
 
 //Responsive Desktop
 @media only screen and (min-device-width: 900px) and (max-device-width: 1300px) {
-    .legendsZoneContainer {
-        margin-top: 40px;
-        .legendsZoneTitle {
-          font-size: 2.2em;
-        }
-        .legendsZoneImg {
-          width: 100%;
-          margin: auto;
-    
-          .legendsZoneImg01 {
-            width: 620px;
-            margin-bottom: -60px;
-          }
-    
-          .legendsZoneImg02 {
-            width: 420px;
-          }
-        }
-    
-        .legendsZoneText {
-          text-align: center;
-          margin: 50px auto;
-          max-width: 700px;
-        }
+  .legendsZoneContainer {
+    margin-top: 40px;
+    .legendsZoneTitle {
+      font-size: 2.2em;
+    }
+    .legendsZoneImg {
+      width: 100%;
+      margin: auto;
+
+      .legendsZoneImg01 {
+        width: 620px;
+        margin-bottom: -60px;
       }
+
+      .legendsZoneImg02 {
+        width: 420px;
+      }
+    }
+
+    .legendsZoneText {
+      text-align: center;
+      margin: 50px auto;
+      max-width: 700px;
+    }
+  }
 }
 
 //Responsive tablette
 @media only screen and (min-device-width: 500px) and (max-device-width: 900px) {
-    .legendsZoneContainer {
-        margin-top: 40px;
-        .legendsZoneTitle {
-          font-size: 2.2em;
-        }
-        .legendsZoneImg {
-          width: 100%;
-          margin: auto;
-    
-          .legendsZoneImg01 {
-            width: 420px;
-            margin-bottom: -50px;
-          }
-    
-          .legendsZoneImg02 {
-            width: 320px;
-          }
-        }
-    
-        .legendsZoneText {
-          text-align: center;
-          margin: 50px auto;
-          max-width: 700px;
-        }
+  .legendsZoneContainer {
+    margin-top: 40px;
+    .legendsZoneTitle {
+      font-size: 2.2em;
+    }
+    .legendsZoneImg {
+      width: 100%;
+      margin: auto;
+
+      .legendsZoneImg01 {
+        width: 420px;
+        margin-bottom: -50px;
       }
+
+      .legendsZoneImg02 {
+        width: 320px;
+      }
+    }
+
+    .legendsZoneText {
+      text-align: center;
+      margin: 50px auto;
+      max-width: 700px;
+    }
+  }
 }
 
 //Mobile

@@ -32,7 +32,7 @@ export default function Sections() {
 
       <div id="thirdSection">
         <div className="metaVerseImg">
-          <img src={MetaVerseSvg} alt="" />
+          <img className="fade-right" src={MetaVerseSvg} alt="" />
         </div>
         <div className="sectionText sectionText3">
           <h2 className="title-with-gradient ">
