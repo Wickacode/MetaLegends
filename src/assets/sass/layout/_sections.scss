@@ -116,6 +116,7 @@
     }
     #secondSection {
       flex-direction: column-reverse;
+      align-items: baseline;
       .metaLifeImg {
         img {
           width: 400px !important;
@@ -128,6 +129,7 @@
     }
     #thirdSection {
       flex-direction: column-reverse;
+      align-items: baseline;
       .metaVerseImg {
         img {
           width: 400px !important;
@@ -161,6 +163,7 @@
     #secondSection {
       gap: 0 !important;
       flex-direction: column-reverse;
+      align-items: baseline;
 
       .metaLifeImg {
         float: left;
@@ -176,6 +179,7 @@
     #thirdSection {
       gap: 0px !important;
       flex-direction: column-reverse;
+      align-items: baseline;
       .metaVerseImg {
         img {
           width: 200px !important;

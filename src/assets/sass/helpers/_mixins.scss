@@ -7,3 +7,12 @@
 @mixin max-width {
     max-width: 1700px;
 }
+
+@mixin btn-style {
+    font-size: 0.7em;
+    gap: 0.5em;
+    letter-spacing: 2px;
+    width: auto;
+    margin: 40px auto;
+    padding: 15px;
+}

@@ -33,6 +33,12 @@ a {
   color: white;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 .title-with-gradient {
   background: linear-gradient(264.63deg, #cf4a7a 15.41%, #6d3a88 94.87%);
   -webkit-background-clip: text;

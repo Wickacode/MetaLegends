@@ -115,24 +115,10 @@
   }
 }
 
-//Mobile
+// Responsive Mobile
 @media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
-  .btnJoin {
-    font-size: 0.7em;
-    gap: 0.5em;
-    letter-spacing: 2px;
-    width: auto;
-    margin: 40px auto;
-    padding: 15px;
-  }
-
-  .btnBecome {
-    font-size: 0.7em;
-    gap: 0.5em;
-    letter-spacing: 2px;
-    width: auto;
-    margin: 40px auto;
-    padding: 15px;
-  }
+  .btn, .btnJoin, .btnBecome {
+    @include btn-style;
+  } 
 
 }

@@ -5,7 +5,7 @@ import { faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 export default function Team() {
   return (
-    <div className="teamContainer">
+    <div className="teamContainer" id="sectionTeam">
       {Object.keys(teamData).map((memberKey) => {
         const { name, description, img, instagram, twitter } =
           teamData[memberKey];

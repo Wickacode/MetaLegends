@@ -1,41 +1,49 @@
-import React from "react";
-import MenuBurger from "./MenuBurger";
-import {
-  faTwitter,
-  faDiscord,
-  faInstagram,
-} from "@fortawesome/free-brands-svg-icons";
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+    faTwitter,
+    faDiscord,
+    faInstagram,
+  } from "@fortawesome/free-brands-svg-icons";
+  import OpenSeaLogo from "../assets/images/icone/openSeaLogo.png";
+
 import LogoMetaLegends from "../assets/images/logoMetaLegends.svg";
-import OpenSeaLogo from "../assets/images/icone/openSeaLogo.png";
 
-export default function Navbar() {
+function NavBar() {
+  const [click, setClick] = useState(false);
 
+  const handleClick = () => setClick(!click);
   return (
-    <nav>
-      <div className="linkList">
-        <a href="/">
+    <>
+      <nav className="navbar">
+        <div className="nav-container">
+          <NavLink exact to="/" className="nav-logo">
           <img className="logoMetaLegends" src={LogoMetaLegends} alt="logo meta legends" />
-        </a>
-        <ul className="menuList">
-          <li>
-            <a href="/">Home</a>
-          </li>
-          <li>
-            <a href="#sectionMetaLife">Meta Life</a>
-          </li>
-          <li>
-            <a href="#sectionMetaConnect">Meta Connect</a>
-          </li>
-          <li>
-            <a href="#sectionLegendsZone">Legends Zone</a>
-          </li>
-          <li>
-            <a href="/">Team</a>
-          </li>
-        </ul>
-        < MenuBurger />
-        <div className="socialLinks">
+          </NavLink>
+
+          <ul className={click ? "nav-menu active" : "nav-menu"}>
+            <li className="nav-item">
+            <a href="/" activeClassName="active" className="nav-links" onClick={handleClick}>Home</a>
+
+            </li>
+            <li className="nav-item">
+            <a href="#sectionMetaLife" activeClassName="active" className="nav-links" onClick={handleClick}>Meta Life</a>
+             
+            </li>
+            <li className="nav-item">
+            <a href="#sectionMetaConnect" activeClassName="active" className="nav-links" onClick={handleClick}>Meta Connect</a>
+            </li>
+            <li className="nav-item">
+            <a href="#sectionLegendsZone" activeClassName="active" className="nav-links" onClick={handleClick}>Meta Legends</a>
+
+            </li>
+            <li className="nav-item">
+            <a href="#sectionTeam" activeClassName="active" className="nav-links" onClick={handleClick}>Team</a>
+
+            </li>
+            <div className="socialLinks">
           <a
             href="https://discord.gg/meta-life-889533275545149440"
             className="socialLinksButton"
@@ -69,7 +77,14 @@ export default function Navbar() {
             <img src={OpenSeaLogo} alt="Logo Opensea" />
           </a>
         </div>
-      </div>
-    </nav>
+          </ul>
+          <div className="nav-icon" onClick={handleClick}>
+          <FontAwesomeIcon icon={click ? faTimes : faBars} />
+          </div>
+        </div>
+      </nav>
+    </>
   );
 }
+
+export default NavBar;

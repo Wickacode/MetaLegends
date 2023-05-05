@@ -2,38 +2,38 @@
   "member01": {
     "name": "Robin",
     "description": "Founder",
-    "img": "https://i.seadn.io/gae/fDNd-UOk3S2T9TCmtZLyoTuV6akc9u5pqR3U_QzLZjNflJ0ljh8vIpakERRdCUT9fnw4d-Vdod_vppRkDnJoX95PkHRLkQ8i271TWeg?auto=format&w=1000",
+    "img": "https://cdn.discordapp.com/attachments/1103607755664789526/1103680981124259900/IMG_5232.png",
     "instagram": "https://www.instagram.com/janssens_robin_/",
     "twitter": "https://twitter.com/Robin_Janssens_"
   },
   "member02": {
     "name": "Maxime",
     "description": "Digital Artist",
-    "img": "https://i.seadn.io/gae/dzn3Jok_HhmHvKQenNNsNVnpgv8r9okJqTVN97nUOsEaHnh0P_pYDb8XKROcdV42j62tj-aVSRS2fqVrna53usc90_bRNJYVawKAJTk?auto=format&w=1000",
+    "img": "https://cdn.discordapp.com/attachments/1103607755664789526/1103680980373471262/IMG_5231.png",
     "instagram": "https://www.instagram.com/mhsmax/",
     "twitter": "https://twitter.com/HacquardMaxime"
   },
   "member03": {
     "name": "Dara",
     "description": "General Manager",
-    "img": "https://i.seadn.io/gae/cXlUOieCMk9JsQvUDs4jeqcJyUMUiqlW-RSo6RNLKvcAyMvj0t1xCVfDuhJZ69NUIH-ESwmwPEOgaJJ3CvMkWBqvcnRz9JQ09V1-8A?w=500&auto=format"
+    "img": "https://cdn.discordapp.com/attachments/1103607755664789526/1103680978192441475/IMG_5228.png"
   },
   "member04": {
     "name": "Hando",
     "description": "CTO",
-    "img": "https://i.seadn.io/gae/-V0HPIlKVBqHcrX3rpmKI4TUO_KIKsDAODjxGC22olDoK_md4FSNPWfKfg9P6Rl7C-akOX36gaA6AogbjsjN-VNi6XJdTrbBxOARODw?auto=format&w=1000",
+    "img": "https://cdn.discordapp.com/attachments/1103607755664789526/1103680979702390874/IMG_5230.png",
     "instagram": "https://www.instagram.com/handosensei/",
     "twitter": "https://twitter.com/HandoSensei"
   },
   "member05": {
     "name": "Azgilar",
-    "img": "https://media.discordapp.net/attachments/1080185352792318022/1101790632646819840/Screenshot_2022-11-08-18-19-46-47_43eb37179a699bcb5aac86b4460791cb.jpg?width=1378&height=1371",
+    "img": "https://cdn.discordapp.com/attachments/1103607755664789526/1103680979073237052/IMG_5229.png",
     "twitter": "https://twitter.com/azgilar"
   },
   "member06": {
     "name": "Rey",
     "description": "Community & partner manager",
-    "img": "https://media.discordapp.net/attachments/1062361759287103528/1101850634036191313/IMG_2802.png?width=1385&height=1371",
+    "img": "https://cdn.discordapp.com/attachments/1103607755664789526/1103680977471033344/IMG_5227.png",
     "twitter" : "https://twitter.com/ReyLegendNFT"
   }
 }

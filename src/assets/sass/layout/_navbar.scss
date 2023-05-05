@@ -1,17 +1,30 @@
-nav {
-    padding: 0 5%;
-
-  .linkList {
+.navbar {
     @include flex-rules;
-    gap: 4em;
-
-    .logoMetaLegends{
-      width: 150px;
-    }
-
-    .menuList {
-      @include flex-rules;
-      gap: 6em;
+    height: 100px;
+    font-size: 1.2rem;
+    
+  }
+  
+  .nav-container {
+    @include flex-rules;
+    justify-content: space-between;
+    height: 80px;
+    gap: 4rem;
+    
+  }
+  
+  .nav-logo {
+    cursor: pointer;
+  }
+  
+  .nav-menu {
+    @include flex-rules;
+    gap: 4rem;
+  }
+  
+  .nav-links {
+    @include flex-rules;
+    gap: 6em;
       font-size: 1em;
       cursor: pointer;
 
@@ -20,171 +33,158 @@ nav {
         letter-spacing: 4px;
 
       }
-    }
-
-    .menuBurger {
-        display: none;
-        width: 50px;
-        height: 50px;
-        border: 2px solid red;
-    }
-    
-    .socialLinks {
-      display: flex;
-      align-items: center;
-      gap: 0.5em;
-      padding: 20px;
-
-      .socialLinksButton {
-        width: 50px;
-        background-image: linear-gradient(
-          to right top,
-          #480a5e,
-          #440b68,
-          #3d0e72,
-          #31127e,
-          #1b1789
-        );
-        color: #cfbebe;
-        padding: 10px;
-        font-size: 1.4em;
-        clip-path: polygon(65% 0, 100% 31%, 100% 100%, 0% 100%, 0 51%, 0% 0%);
-      }
-      .openSeaIcone {
-        width: 135px;
-      }
-      .openSeaIcone::after {
-        content: "OpenSea";
-        font-size: 14px;
-        font-weight: bold;
-        margin: 0 10px;
-        vertical-align: middle;
-        
-      }
-
-      img {
-        width: 23px;
-      }
-    }
   }
-}
-
-
-//Responsive Desktop
-@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
-  ul.menuList {
-    display: none !important;
+  .fa-code {
+    margin-left: 1rem;
+  }
+  
+  .nav-item {
+    line-height: 40px;
+    margin-right: 1rem;
+  }
+  
+  .nav-item:after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0;
+    background: transparent;
+    transition: width 0.7s ease, background-color 0.5s ease;
+  }
+  
+  .nav-item:hover:after {
+    width: 100%;
+    background: #a136db;
+  }
+  
+  .nav-item .active {
+    color: #a136db;
+  }
+  
+  .nav-icon {
+    display: none;
   }
 
   .socialLinks {
-    display: none !important;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    padding: 20px;
+
+    .socialLinksButton {
+      width: 50px;
+      background-image: linear-gradient(
+        to right top,
+        #480a5e,
+        #440b68,
+        #3d0e72,
+        #31127e,
+        #1b1789
+      );
+      color: #cfbebe;
+      padding: 10px;
+      font-size: 1.4em;
+      clip-path: polygon(65% 0, 100% 31%, 100% 100%, 0% 100%, 0 51%, 0% 0%);
+    }
+    .openSeaIcone {
+      width: 155px;
+    }
+    .openSeaIcone::after {
+      content: "OpenSea";
+      font-size: 14px;
+      font-weight: bold;
+      margin: 0 10px;
+      vertical-align: middle;
+      
+    }
+    img {
+        width: 25px;
+      }
   }
-
-  .menuBurger {
-    display: flex !important;
-  }
-
-}
-
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1500px) {
-    .linkList {
-        gap: 1em !important;
-    }
-    .menuList {
-    gap: 2em !important;
-
-    li {
-        letter-spacing: 1px;
-    }
-
-}
-}
-
-//Responsive Mobile
-@media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
-    .logoMetaLegends{
-        width: 60px !important;
-      }
-}
-
-
-
-
-//Responsive
-//Mobile
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  #navbar {
-    .linkList {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-      gap: 4em;
-
-      img {
-        width: 100px;
-      }
-
-      .menuListBurger {
-        display: flex;
-        width: 50px;
-        height: 50px;
-        border: 2px solid red;
-        color: #cfbebe;
-
-        i {
-            color: aliceblue;
-        }
-    }
-
-      ul {
-        display: flex;
-        gap: 6em;
-        font-size: 1em;
-        padding: 20px;
-        cursor: pointer;
-
-        li {
-          text-transform: uppercase;
-          letter-spacing: 4px;
-        }
-      }
-      .socialLinks {
-        display: none;
-        align-items: center;
-        gap: 0.5em;
-        padding: 20px;
-
-        .socialLinksButton {
-          font-size: 1em;
-                }
-
-        .openSeaIcone::after {
-          font-size: 12px;
-        }
-
-        img {
-          width: 23px;
-        }
-      }
-    }
-  }
-}
-
-
-
   
-//Responsive Desktop
-@media only screen and (min-device-width: 900px) and (max-device-width: 1300px) {
+  @media screen and (max-width: 960px) {
 
-}
+    
+    .logoMetaLegends {
+        width: 120px;
+    }
+    .nav-menu {
+      @include flex-rules;
+      flex-direction: column;
+      width: 100%;
+      border-top: 1pxsolid #fff;
+      position: absolute;
+      top: 80px;
+      left: -110%;
+      opacity: 1;
+      transition: all 0.5s ease;
+      gap: 1rem;
+    }
+  
+    .nav-menu.active {
+      background: #07041b;
+      left: 0px;
+      opacity: 1;
+      transition: all 0.5s ease;
+      z-index: 1;
+    }
+    .nav-item .active {
+      color: #a035c3;
+      border: none;
+    }
+    .nav-links {
+      padding: 1.5rem;
+      width: 100%;
+      display: flex;
+    }
+  
+    .nav-icon {
+      display: flex !important;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(-100%, 60%);
+      font-size: 1.8rem;
+      cursor: pointer;
+      color: #a136db;
+    }
 
-//Responsive tablette
-@media only screen and (min-device-width: 500px) and (max-device-width: 900px) {
-
-}
-
-//Mobile
-@media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
- 
-}
+    .socialLinks {
+        @include flex-rules;
+        gap: 0.2em;
+        padding: 5px;
+        margin-bottom: 30px;
+    
+        .socialLinksButton {
+            @include flex-rules;
+          width: 40px;
+          background-image: linear-gradient(
+            to right top,
+            #480a5e,
+            #440b68,
+            #3d0e72,
+            #31127e,
+            #1b1789
+          );
+          color: #cfbebe;
+          padding: 10px;
+          font-size: 1.4em;
+          clip-path: none;
+        }
+        .openSeaIcone {
+          width: 155px;
+        }
+        .openSeaIcone::after {
+          content: "OpenSea";
+          font-size: 14px;
+          font-weight: bold;
+          margin: 0 10px;
+          vertical-align: middle;
+          
+        }
+        img {
+            width: 25px;
+          }
+  }
+  
+  } 
