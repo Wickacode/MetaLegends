@@ -127,6 +127,7 @@
 @media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
   .homeContainer {
     .bg-menu {
+      padding: 5px;
       .homeContent {
         @include flex-rules;
         @include max-width;
