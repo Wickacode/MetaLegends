@@ -21,7 +21,10 @@ export default function Home() {
         <div className="homeContent">
           <div className="introduction">
             <h1 className="bigTitle">
-              <span className="title-with-gradient centerBigTitle">12345 Legends</span> <br />
+              <span className="title-with-gradient centerBigTitle">
+                12345 Legends
+              </span>{" "}
+              <br />
               to Save humanity
             </h1>
             <p>
@@ -52,7 +55,7 @@ export default function Home() {
         </button>
         <Factions />
       </div>
-    
+
       <Sections />
       <MetaConnect />
       <LegendsZone />

@@ -8,7 +8,6 @@ export default function Sections() {
 
   return (
     <div className="sectionsContainer">
-
       <div id="firstSection">
         <div className="sectionText sectionText1">
           <h2 className="title-with-gradient">{firstSection.title}</h2>
@@ -25,8 +24,7 @@ export default function Sections() {
         </div>
         <div className="sectionText sectionText2">
           <h2 className="title-with-gradient">{secondSection.title}</h2>
-          <p dangerouslySetInnerHTML={{ __html: secondSection.content }}>
-          </p>
+          <p dangerouslySetInnerHTML={{ __html: secondSection.content }}></p>
         </div>
       </div>
 
@@ -35,11 +33,8 @@ export default function Sections() {
           <img className="fade-right" src={MetaVerseSvg} alt="" />
         </div>
         <div className="sectionText sectionText3">
-          <h2 className="title-with-gradient ">
-          {thirdSection.title}
-          </h2>
-          <p dangerouslySetInnerHTML={{ __html: thirdSection.content }}>
-          </p>
+          <h2 className="title-with-gradient ">{thirdSection.title}</h2>
+          <p dangerouslySetInnerHTML={{ __html: thirdSection.content }}></p>
         </div>
       </div>
     </div>

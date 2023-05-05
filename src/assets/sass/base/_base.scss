@@ -64,7 +64,7 @@ p {
     margin-bottom: 20px;
     text-align: center;
   }
-  
+
   p {
     padding: 0 30px;
     font-size: 1.1em;
@@ -79,7 +79,7 @@ p {
     margin-bottom: 20px;
     text-align: center;
   }
-  
+
   p {
     padding: 0 30px;
     font-size: 1em;
@@ -87,15 +87,14 @@ p {
   }
 }
 
-
 // Responsive Mobile
 @media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
- .title-with-gradient {
+  .title-with-gradient {
     font-size: 1em;
     margin-bottom: 20px;
     text-align: center;
   }
-  
+
   p {
     padding: 0 15px;
     font-size: 0.8em;

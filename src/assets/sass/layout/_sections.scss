@@ -53,7 +53,7 @@
       }
       .fade-right {
         -webkit-mask-image: linear-gradient(to left, transparent, #07041b 60%);
-    mask-image: linear-gradient(to left, transparent, #07041b 60%);
+        mask-image: linear-gradient(to left, transparent, #07041b 60%);
       }
     }
 
@@ -69,41 +69,37 @@
     gap: 5em !important;
 
     #firstSection {
-    padding: 0;
-    .metaLegendsImg {
-      img {
-        width: 450px !important;
+      padding: 0;
+      .metaLegendsImg {
+        img {
+          width: 450px !important;
+        }
+      }
+    }
+    #secondSection {
+      .metaLifeImg {
+        img {
+          width: 500px !important;
+        }
+      }
+
+      .sectionText2 {
+        padding-right: 0 !important;
+      }
+    }
+    #thirdSection {
+      gap: 6em !important;
+      .metaVerseImg {
+        img {
+          width: 500px !important;
+        }
+      }
+
+      .sectionText3 {
+        padding-right: 0 !important;
       }
     }
   }
-  #secondSection {
-    .metaLifeImg {
-      img {
-        width: 500px !important;
-      }
-    }
-
-    .sectionText2 {
-      padding-right: 0 !important;
-    }
-  }
-  #thirdSection {
-    gap: 6em !important;
-    .metaVerseImg {
-
-      img {
-        width: 500px !important;
-  
-      }
-      
-    }
-
-    .sectionText3 {
-      padding-right: 0 !important;
-    }
-  }
-  }
-  
 }
 
 //Responsive tablette

@@ -1,18 +1,18 @@
 @mixin flex-rules {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @mixin max-width {
-    max-width: 1700px;
+  max-width: 1700px;
 }
 
 @mixin btn-style {
-    font-size: 0.7em;
-    gap: 0.5em;
-    letter-spacing: 2px;
-    width: auto;
-    margin: 40px auto;
-    padding: 15px;
+  font-size: 0.7em;
+  gap: 0.5em;
+  letter-spacing: 2px;
+  width: auto;
+  margin: 40px auto;
+  padding: 15px;
 }

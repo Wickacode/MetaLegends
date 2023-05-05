@@ -26,7 +26,6 @@ export default function ImagesLot() {
   };
   return (
     <div className="imagesLotContainer" onMouseMove={handleMouseMove}>
-
       <div className="card" ref={cardRef}>
         <div className="contentCard">
           <img src={imageLot} alt="Lot d'images Meta Legends" />

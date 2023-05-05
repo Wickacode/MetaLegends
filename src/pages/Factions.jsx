@@ -61,18 +61,25 @@ export default function Factions() {
             className="socialLinkFactions socialDiscord"
             target="_blank"
             rel="noopener noreferrer"
-          > <span>Joins us on <strong>Discord</strong></span>
+          >
+            {" "}
+            <span>
+              Joins us on <strong>Discord</strong>
+            </span>
             <FontAwesomeIcon className="socialDiscordIcone" icon={faDiscord} />
-           </a> 
-            <a
+          </a>
+          <a
             href="https://twitter.com/metalegendsnft"
             className="socialLinkFactions socialTwitter"
             target="_blank"
             rel="noopener noreferrer"
-          > <span>Joins us on <strong>Twitter</strong></span>
+          >
+            {" "}
+            <span>
+              Joins us on <strong>Twitter</strong>
+            </span>
             <FontAwesomeIcon className="socialTwitterIcone" icon={faTwitter} />
           </a>
-          
         </div>
       </div>
     </div>
