@@ -11,7 +11,7 @@ export default function Team() {
     fadeInOnScroll(elements.current);
   }, []);
   return (
-    <div className="teamContainer fade-in"ref={el => elements.current.push(el)} id="sectionTeam">
+    <div className="teamContainer fade-in-scroll"ref={el => elements.current.push(el)} id="sectionTeam">
       {Object.keys(teamData).map((memberKey) => {
         const { name, description, img, instagram, twitter } =
           teamData[memberKey];

@@ -12,7 +12,7 @@ export default function LegendsZone() {
   }, []);
 
   return (
-    <section className="bgLegendZone fade-in" ref={el => elements.current.push(el)}>
+    <section className="bgLegendZone fade-in-scroll" ref={el => elements.current.push(el)}>
       <div className="legendsZoneContainer" id="sectionLegendsZone">
         <h2 className="title-with-gradient legendsZoneTitle">Legends Zone </h2>
         <div className="legendsZoneImg">

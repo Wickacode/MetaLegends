@@ -14,14 +14,22 @@
     }
   }
 
-//Effet Fade-in-scroll 
+  //Effet Fade-in 
+  .fade-in {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+  }
+  .fadeOnLoad {
+    opacity: 1;
+  }
 
-.fade-in {
+//Effet Fade-in-scroll 
+.fade-in-scroll {
   opacity: 0;
-  transition: opacity 3s ease-out;
+  transition: opacity 2.7s ease-out;
 }
 
-.fade-in.visible {
+.fade-in-scroll.visible {
   opacity: 1;
 }
 

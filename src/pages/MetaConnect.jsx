@@ -13,7 +13,7 @@ export default function MetaConnect() {
   }, []);
 
   return (
-    <div className="metaConnectContainer fade-in"ref={el => elements.current.push(el)} id="sectionMetaConnect">
+    <div className="metaConnectContainer fade-in-scroll"ref={el => elements.current.push(el)} id="sectionMetaConnect">
       <div className="mcTopBloc" >
         <div className="sectionText">
           <h2 className="title-with-gradient">Meta connect</h2>

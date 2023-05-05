@@ -17,7 +17,7 @@ export default function Sections() {
 
   return (
     <div className="sectionsContainer">
-      <div id="firstSection" className="fade-in"ref={el => elements.current.push(el)}>
+      <div id="firstSection" className="fade-in-scroll"ref={el => elements.current.push(el)}>
         <div className="sectionText sectionText1">
           <h2 className="title-with-gradient">{firstSection.title}</h2>
           <p dangerouslySetInnerHTML={{ __html: firstSection.content }}></p>
@@ -27,7 +27,7 @@ export default function Sections() {
         </div>
       </div>
 
-      <div id="secondSection" className="fade-in"ref={el => elements.current.push(el)}>
+      <div id="secondSection" className="fade-in-scroll"ref={el => elements.current.push(el)}>
         <div className="metaLifeImg" id="sectionMetaLife">
           <img src={MetaLifeSvg} alt="" />
         </div>
@@ -37,7 +37,7 @@ export default function Sections() {
         </div>
       </div>
 
-      <div id="thirdSection" className="fade-in"ref={el => elements.current.push(el)}>
+      <div id="thirdSection" className="fade-in-scroll"ref={el => elements.current.push(el)}>
         <div className="metaVerseImg">
           <img className="fade-right" src={MetaVerseSvg} alt="" />
         </div>
