@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useRef, useEffect } from 'react';
 import AvatarLegendsZone from "../assets/images/icone/avatar-legend-zone.svg";
 import LegendsZoneText from "../assets/images/icone/legends-zone.svg";
 
+import fadeInOnScroll from "../components/FadeAnimation"
+
 export default function LegendsZone() {
+  const elements = useRef([]);
+
+  useEffect(() => {
+    fadeInOnScroll(elements.current);
+  }, []);
+
   return (
-    <section className="bgLegendZone">
+    <section className="bgLegendZone fade-in" ref={el => elements.current.push(el)}>
       <div className="legendsZoneContainer" id="sectionLegendsZone">
         <h2 className="title-with-gradient legendsZoneTitle">Legends Zone </h2>
         <div className="legendsZoneImg">

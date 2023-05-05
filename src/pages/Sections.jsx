@@ -1,14 +1,23 @@
-import React from "react";
+import React, { useRef, useEffect } from 'react';
 import MetaLegendsSvg from "../assets/images/metaLegends/metaLegends.svg";
 import MetaLifeSvg from "../assets/images/metaLegends/metaLife.svg";
 import MetaVerseSvg from "../assets/images/metaLegends/metaVerse.svg";
 import sectionsData from "../assets/data/sections.json";
+import fadeInOnScroll from "../components/FadeAnimation"
+
+
 export default function Sections() {
+  const elements = useRef([]);
+
+  useEffect(() => {
+    fadeInOnScroll(elements.current);
+  }, []);
+
   const { firstSection, secondSection, thirdSection } = sectionsData;
 
   return (
     <div className="sectionsContainer">
-      <div id="firstSection">
+      <div id="firstSection" className="fade-in"ref={el => elements.current.push(el)}>
         <div className="sectionText sectionText1">
           <h2 className="title-with-gradient">{firstSection.title}</h2>
           <p dangerouslySetInnerHTML={{ __html: firstSection.content }}></p>
@@ -18,7 +27,7 @@ export default function Sections() {
         </div>
       </div>
 
-      <div id="secondSection">
+      <div id="secondSection" className="fade-in"ref={el => elements.current.push(el)}>
         <div className="metaLifeImg" id="sectionMetaLife">
           <img src={MetaLifeSvg} alt="" />
         </div>
@@ -28,7 +37,7 @@ export default function Sections() {
         </div>
       </div>
 
-      <div id="thirdSection">
+      <div id="thirdSection" className="fade-in"ref={el => elements.current.push(el)}>
         <div className="metaVerseImg">
           <img className="fade-right" src={MetaVerseSvg} alt="" />
         </div>

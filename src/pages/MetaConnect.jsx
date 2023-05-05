@@ -1,12 +1,20 @@
-import React from "react";
+import React, { useRef, useEffect } from 'react';
 import Mockup1 from "../assets/images/mockups/mockup1.svg";
 import Mockup2 from "../assets/images/mockups/mockup2.svg";
 import Mockup3 from "../assets/images/mockups/mockup3.svg";
 
+import fadeInOnScroll from "../components/FadeAnimation"
+
 export default function MetaConnect() {
+  const elements = useRef([]);
+
+  useEffect(() => {
+    fadeInOnScroll(elements.current);
+  }, []);
+
   return (
-    <div className="metaConnectContainer" id="sectionMetaConnect">
-      <div className="mcTopBloc">
+    <div className="metaConnectContainer fade-in"ref={el => elements.current.push(el)} id="sectionMetaConnect">
+      <div className="mcTopBloc" >
         <div className="sectionText">
           <h2 className="title-with-gradient">Meta connect</h2>
           <p>

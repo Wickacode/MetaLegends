@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useRef, useEffect } from 'react';
 import teamData from "../assets/data/team.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTwitter, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
+import fadeInOnScroll from "../components/FadeAnimation"
 export default function Team() {
+  const elements = useRef([]);
+
+  useEffect(() => {
+    fadeInOnScroll(elements.current);
+  }, []);
   return (
-    <div className="teamContainer" id="sectionTeam">
+    <div className="teamContainer fade-in"ref={el => elements.current.push(el)} id="sectionTeam">
       {Object.keys(teamData).map((memberKey) => {
         const { name, description, img, instagram, twitter } =
           teamData[memberKey];

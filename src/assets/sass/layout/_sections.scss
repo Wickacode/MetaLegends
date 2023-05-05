@@ -164,7 +164,7 @@
     }
 
     #secondSection {
-      gap: 0 !important;
+      gap: 2em !important;
       flex-direction: column-reverse;
       align-items: baseline;
 
@@ -180,12 +180,12 @@
       }
     }
     #thirdSection {
-      gap: 0px !important;
+      gap: 2em !important;
       flex-direction: column-reverse;
       align-items: baseline;
       .metaVerseImg {
         img {
-          width: 200px !important;
+          width: 240px !important;
         }
       }
       .sectionText3 {
