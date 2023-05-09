@@ -1,15 +1,7 @@
-import React from "react";
-import Celestial01 from "../assets/images/sections/celestials/celestials01.svg";
-import Celestial02 from "../assets/images/sections/celestials/celestials02.svg";
-import Celestial03 from "../assets/images/sections/celestials/celestials03.svg";
+import React, { useState, useEffect } from "react";
+import data from "../assets/data/factions.json";
+import FactionLeftBloc from "../components/FactionsDetails";
 
-import Celestial from "../assets/images/emblems/celestials.svg";
-import Burners from "../assets/images/emblems/burners.svg";
-import Cybers from "../assets/images/emblems/cybers.svg";
-import Goldbois from "../assets/images/emblems/goldbois.svg";
-import MatrixAngels from "../assets/images/emblems/matrix-angels.svg";
-import Roboters from "../assets/images/emblems/roboters.svg";
-import Roughs from "../assets/images/emblems/roughs.svg";
 
 import {
   faTwitter,
@@ -18,43 +10,68 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+
 export default function Factions() {
-  return (
-    <div className="factionsContainer">
-      <div className="factionsLeftBloc">
-        <img className="activeImg" src={Celestial01} alt="" />
-        <div className="avatarsFactions">
-          <img src={Celestial01} alt="" />
-          <img src={Celestial02} alt="" />
-          <img src={Celestial03} alt="" />
+  const [activeFaction, setActiveFaction] = useState("celestials");
+
+  const handleClick = (faction) => {
+    setActiveFaction(faction);
+  };
+
+  const factions = Object.keys(data).map((faction) => {
+    const { title, description, emblem, units, gallery } = data[faction];
+    return (
+      <div className="faction" key={faction}>
+        <div className="factionDesktop">
+          <div className="emblemsContainer">
+            <div className="emblem" onClick={() => handleClick(faction)}>
+              <img src={emblem} alt={`${title} emblem`} />
+            </div>
+          </div>
+        </div>
+
+        <div className="factionMobile" key={`${faction}-mobile`}>
+          <div className="emblem" onClick={() => handleClick(faction)}>
+            <img src={emblem} alt={`${title} emblem`} />
+          </div>
         </div>
       </div>
+    );
+  });
+
+  const avatars = activeFaction in data ? data[activeFaction].gallery : [];
+
+  const [activeAvatar, setActiveAvatar] = useState("");
+
+  useEffect(() => {
+    setActiveAvatar(avatars[0] || "");
+  }, [activeFaction]);
+
+  const handleAvatarClick = (avatar) => {
+    setActiveAvatar(avatar);
+  };
+
+  return (
+    <div className="factionsContainer">
+      <FactionLeftBloc
+        activeAvatar={activeAvatar}
+        avatars={avatars}
+        handleAvatarClick={handleAvatarClick}
+      />
       <div className="factionsRightBloc">
-        <div className="emblems">
-          <img src={Celestial} alt="" />
-          <img src={Burners} alt="" />
-          <img src={Roboters} alt="" />
-          <img src={Goldbois} alt="" />
-          <img src={MatrixAngels} alt="" />
-          <img src={Cybers} alt="" />
-          <img src={Roughs} alt="" />
+        <div className="factions">
+          {factions}
         </div>
-        <div className="textSection">
-          <h2>Celestials</h2>
-          <p className="factionsParagraph">
-            Great guardians of the Metaverse, the Celestials are the most
-            powerful of all classes with an influence and a power that is close
-            to the Gods.
-            <br />
-            <br />
-            As they are greatly evolved, they have developed a deep sense of
-            ethics and morals that exist in symbiosis with their vision. They
-            managed to coexist with Burners, despite their superiority.
-            <br />
-            <br />
-            Their mission is to govern the Metaverse.
-          </p>
-        </div>
+        {activeFaction in data && (
+          <div className="textSection">
+            <div className="titleUnits">
+              <h2>{data[activeFaction].title}</h2>
+              <span>{data[activeFaction].units}</span>
+            </div>
+            <p className="factionsDescription">{data[activeFaction].description}</p>
+          </div>
+        )}
+
         <div className="socialFactions">
           <a
             href="https://discord.gg/meta-life-889533275545149440"
@@ -82,6 +99,7 @@ export default function Factions() {
           </a>
         </div>
       </div>
+      
     </div>
   );
 }

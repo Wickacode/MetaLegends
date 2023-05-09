@@ -7,8 +7,8 @@ import {
   faDiscord,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
-import OpenSeaLogo from "../assets/images/icone/openSeaLogo.png";
 
+import OpenSeaLogo from "../assets/images/icone/openSeaLogo.png";
 import LogoMetaLegends from "../assets/images/logoMetaLegends.svg";
 
 function NavBar() {

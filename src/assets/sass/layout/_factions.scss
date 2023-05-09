@@ -2,29 +2,40 @@
   display: flex;
   justify-content: space-around;
   margin: auto;
-  gap: 3%;
   padding: 40px;
   @include max-width;
   margin-top: 50px;
 
   .factionsLeftBloc {
-    display: flex;
-    justify-content: center;
+    @include flex-rules;
     flex-direction: column;
 
-    .activeImg {
-      width: 100%;
-      margin-bottom: 20px;
-      cursor: pointer;
+    .avatarActive {
+      width: 350px;
+      height: 350px;
+
+      img {
+        width: 362px;
+        height: 100%;
+      }
     }
 
-    .avatarsFactions {
-      @include flex-rules;
-      gap: 1em;
+    .avatarsGallery {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      padding: 20px 0;
+
       img {
+        opacity: 0.3;
         background-image: url(../../images/icone/border.svg);
-        width: 27%;
+        width: 25%;
         cursor: pointer;
+
+        &:hover {
+          opacity: 1;
+        }
       }
     }
   }
@@ -32,23 +43,42 @@
   .factionsRightBloc {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: 50%;
-    .emblems {
-      @include flex-rules;
-      justify-content: space-between;
+    width: 60%;
 
-      img {
-        cursor: pointer;
-        width: 70px;
+    .factions {
+      display: flex;
+      justify-content: space-between;
+      .faction {
+        .factionDesktop {
+          .emblemsContainer {
+            .emblem {
+              cursor: pointer;
+              img {
+                width: 100px;
+                height: 100px;
+              }
+            }
+          }
+        }
       }
     }
 
     .textSection {
       display: flex;
       flex-direction: column;
-      gap: 2em;
-      padding: 20px;
+      gap: 3em;
+      padding: 50px 20px;
+
+      .titleUnits {
+        display: flex;
+        justify-content: space-between;
+        font-size: 2em;
+
+        span {
+          color: #d092e2;
+          font-weight: bold;
+        }
+      }
     }
 
     .socialFactions {
@@ -99,132 +129,145 @@
   }
 }
 
+.factionMobile {
+  display: none;
+}
+
 //Responsive Desktop
-@media only screen and (min-device-width: 900px) and (max-device-width: 1300px) {
-  .factionsContainer {
-    padding: 10px;
+// @media only screen and (min-device-width: 900px) and (max-device-width: 1300px) {
+//   .factionsContainer {
+//     padding: 10px;
 
-    .factionsRightBloc {
-      .textSection {
-        padding: 5px;
-      }
-    }
-    .emblems {
-      overflow: hidden;
-    }
+//     .factionsRightBloc {
+//       .textSection {
+//         padding: 5px;
+//       }
+//     }
+//     .emblems {
+//       overflow: hidden;
+//     }
 
-    .factionsParagraph {
-      text-align: left;
-      padding: 0;
-    }
+//     .factionsParagraph {
+//       text-align: left;
+//       padding: 0;
+//     }
 
-    .socialFactions {
-      gap: 1em !important;
+//     .socialFactions {
+//       gap: 1em !important;
 
-      .socialLinkFactions {
-        @include flex-rules;
-        margin-top: 30px;
-        padding: 0;
-        font-size: 12px;
-        height: 35px;
-      }
+//       .socialLinkFactions {
+//         @include flex-rules;
+//         margin-top: 30px;
+//         padding: 0;
+//         font-size: 12px;
+//         height: 35px;
+//       }
 
-      .socialDiscordIcone {
-        font-size: 22px !important;
-      }
-      .socialTwitterIcone {
-        font-size: 20px !important;
-      }
-      span {
-        display: flex;
-      }
-    }
-  }
-}
+//       .socialDiscordIcone {
+//         font-size: 22px !important;
+//       }
+//       .socialTwitterIcone {
+//         font-size: 20px !important;
+//       }
+//       span {
+//         display: flex;
+//       }
+//     }
+//   }
+// }
 
-//Responsive tablette
-@media only screen and (min-device-width: 500px) and (max-device-width: 900px) {
-  .factionsContainer {
-    padding: 10px;
+// //Responsive tablette
+// @media only screen and (min-device-width: 500px) and (max-device-width: 900px) {
+//   .factionsContainer {
+//     padding: 10px;
 
-    .factionsRightBloc {
-      .textSection {
-        padding: 5px;
-      }
-    }
-    .emblems {
-      overflow: hidden;
-    }
+//     .factionsRightBloc {
+//       .textSection {
+//         padding: 5px;
+//       }
+//     }
+//     .emblems {
+//       overflow: hidden;
+//     }
 
-    .factionsParagraph {
-      text-align: left;
-      padding: 0;
-    }
+//     .factionsParagraph {
+//       text-align: left;
+//       padding: 0;
+//     }
 
-    .socialFactions {
-      gap: 1em !important;
+//     .socialFactions {
+//       gap: 1em !important;
 
-      .socialLinkFactions {
-        @include flex-rules;
-        margin-top: 30px;
-        padding: 0;
-        font-size: 12px;
-        height: 35px;
-      }
+//       .socialLinkFactions {
+//         @include flex-rules;
+//         margin-top: 30px;
+//         padding: 0;
+//         font-size: 12px;
+//         height: 35px;
+//       }
 
-      .socialDiscordIcone {
-        font-size: 18px !important;
-      }
-      .socialTwitterIcone {
-        font-size: 20px !important;
-      }
-      span {
-        display: none;
-      }
-    }
-  }
-}
+//       .socialDiscordIcone {
+//         font-size: 18px !important;
+//       }
+//       .socialTwitterIcone {
+//         font-size: 20px !important;
+//       }
+//       span {
+//         display: none;
+//       }
+//     }
+//   }
+// }
 
-//Mobile
+// //Mobile
 @media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
-  .factionsContainer {
-    padding: 10px;
-
-    .factionsRightBloc {
-      .textSection {
-        padding: 5px;
-      }
-    }
-    .emblems {
-      overflow: hidden;
-    }
-
-    .factionsParagraph {
-      text-align: left;
-      padding: 0;
-    }
-
-    .socialFactions {
-      gap: 1em !important;
-
-      .socialLinkFactions {
-        @include flex-rules;
-        margin-top: 30px;
-        padding: 0;
-        gap: 5px;
-        font-size: 12px;
-        height: 35px;
-      }
-
-      .socialDiscordIcone {
-        font-size: 18px !important;
-      }
-      .socialTwitterIcone {
-        font-size: 20px !important;
-      }
-      span {
-        display: none;
-      }
-    }
+  .factionMobile {
+    background-color: #bdb9c0;
+    display: flex;
   }
+
+  .factionDesktop {
+    display: none;
+  }
+
+  // .factionsContainer {
+  //   padding: 10px;
+
+  //   .factionsRightBloc {
+  //     .textSection {
+  //       padding: 5px;
+  //     }
+  //   }
+  //   .emblems {
+  //     overflow: hidden;
+  //   }
+
+  //   .factionsParagraph {
+  //     text-align: left;
+  //     padding: 0;
+  //   }
+
+  //   .socialFactions {
+  //     gap: 1em !important;
+
+  //     .socialLinkFactions {
+  //       @include flex-rules;
+  //       margin-top: 30px;
+  //       padding: 0;
+  //       gap: 5px;
+  //       font-size: 12px;
+  //       height: 35px;
+  //     }
+
+  //     .socialDiscordIcone {
+  //       font-size: 18px !important;
+  //     }
+  //     .socialTwitterIcone {
+  //       font-size: 20px !important;
+  //     }
+  //     span {
+  //       display: none;
+  //     }
+  //   }
+  // }
 }

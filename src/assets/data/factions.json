@@ -1,19 +1,80 @@
+
 {
-    "celestials": {
-      "title": "Celestials",
-      "description": "Great guardians of the Metaverse, the Celestials are the most powerful with an influence and a power that is close to the Gods. Their mission is to govern the Metaverse. As they are greatly evolved, they developed a deep sense of ethics and morals, that exists in symbiosis with their vision. They managed to coexist with Burners, even though they are superior.",
-      "image": "/images/celestials.jpg",
-      "units": "11(+5) Units"
-    },
-    "burners": {
-      "title": "Burners",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "image": "/images/burners.jpg"
-    },
-    "robots": {
-      "title": "Robots",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "image": "/images/robots.jpg"
-    }
+  "celestials": {
+    "title": "Celestials",
+    "description": "Great guardians of the Metaverse, the Celestials are the most powerful with an influence and a power that is close to the Gods. Their mission is to govern the Metaverse. As they are greatly evolved, they developed a deep sense of ethics and morals, that exists in symbiosis with their vision. They managed to coexist with Burners, even though they are superior.",
+    "emblem": "https://imgur.com/LtJbDqN.png",
+    "gallery" : [
+      "https://imgur.com/5jzqM6o.png",
+      "https://imgur.com/z9THhe6.png",
+      "https://imgur.com/4DsToaz.png"
+    ],
+    "units": "11(+5) Units"
+  },
+  "burners": {
+    "title": "Burners",
+    "description": "The burners are just below the Celestials. They accepted alliances and pacts with the evil in order to improve their power. They have control over all the classes under them and thanks to this domination, they obtained peace. They are inspired from all the great villains from pop culture, like Darth Vader, Magneto, The Joker, Sauron, Thanos, and many others.",
+    "emblem": "https://imgur.com/3jE8rrg.png",
+    "gallery" : [
+      "https://imgur.com/bEThsSj.png",
+      "https://imgur.com/xfyj2Up.png",
+      "https://imgur.com/elh2RkP.png"
+    ],
+    "units": "33 Units"
+  },
+  "roboters": {
+    "title": "Roboters",
+    "description": "The Roboters are technology stealers and they obtained a power level close to the gods power, by stealing precious materials from the Celestials. That is why their armor is entirely forged in mystical materials. They also absorbed the energy from the burners, without absorbing it totally. They will remind you of the dark versions of your favorite heroes.",
+    "emblem": "https://imgur.com/jMWAdsQ.png",
+    "gallery" : [
+      "https://imgur.com/T2bnYYv.png",
+      "https://imgur.com/hAy3Y7M.png",
+      "https://imgur.com/Nz6MyMW.png"
+    ],
+    "units": "111 Units"
+  },
+  "goldbois": {
+    "title": "Goldbois",
+    "description": "The Goldbois is the richest class of the Metaverse. They own unlimited wealth and influence.However, they never tried to fight with the higher classes, and simply enjoy their current position.They will be inspired from divinities, celebrities (real or fictional) and they will represent absolute abundance (intellectual and financial).References : Mythology, Religions, Entrepreneurs, etc...",
+    "emblem": "https://imgur.com/67jcgrz.png",
+    "gallery" : [
+      "https://imgur.com/kWHCEqd.png",
+      "https://imgur.com/rvKftKk.png",
+      "https://imgur.com/wrwiugW.png"
+    ],
+    "units": "444 Units"
+  },
+  "matrix angels": {
+    "title": "Matrix Angels",
+    "description": "The Matrix Angels are the greatest coders and developers of the metaverse.They have the power to influence, create, or hack any powerful entity.However, they have very strict morals and ethics, preventing them from stealing knowledge from immoral elites and Goldbois money.They are taking care of the Metaverse, improving its space, and fighting the evil hackers.The Matrix Angels are inspired from the Tech world and the 80’s.",
+    "emblem": "https://imgur.com/jYsWWX5.png",
+    "gallery" : [
+      "https://imgur.com/CqZGSY8.png",
+      "https://imgur.com/xLWVg3L.png",
+      "https://imgur.com/zQKIMSP.png"
+    ],
+    "units": "1777 Units"
+  },
+  "cybers": {
+    "title": "Cybers",
+    "description": "The Cybers represent all people who managed to succeed in the metaverse after the end of our current world.Famous artists, talented developers, child prodigies, early adopters, and crypto believers that were lucky enough to have sufficient resources to dive into the metaverse, and continue enjoying their lives.They can easily upgrade their appearances.We will find on them famous attributes from the crypto sphere, and references, from other projects: laser eyes, companions, punk hats, cigarettes, etc...",
+    "emblem": "https://imgur.com/5k0bE7R.png",
+    "gallery" : [
+      "https://imgur.com/T2bnYYv.png",
+      "https://imgur.com/hAy3Y7M.png",
+      "https://imgur.com/Nz6MyMW.png"
+    ],
+    "units": "4666 Units"
+  },
+  "roughs": {
+    "title": "Roughs",
+    "description": "Roughs are survivors.The majority of them sacrificed everything they had in the physical world, to join the metaverse and save their consciousness in order to continue existing.However, they are well established and respected inside the metaverse.Something that all the other above classes understood : in this after world you need to work hand in hand with everybody. As the Roughs are not all well educated, there is sometimes some tension because they’ve been brought there by their survival instinct.They are also a bit against the hierarchy already in place.But they don’t have any choice : this is just a reflection of the old world.",
+    "emblem": "https://imgur.com/sTQ3pqX.png",
+    "gallery" : [
+      "https://imgur.com/kPsbHZ8.png",
+      "https://imgur.com/2fb3aE7.png",
+      "https://imgur.com/LK3CkBZ.png"
+    ],
+    "units": " Units"
   }
-  
+}

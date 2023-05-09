@@ -17,14 +17,7 @@
   #teamImgContainer {
     height: 100%;
     position: relative;
-    -webkit-clip-path: polygon(
-      84% 0,
-      100% 16%,
-      100% 100%,
-      15% 100%,
-      0 83%,
-      0 0
-    );
+    clip-path: polygon(29% 0.8%, 100% 0%, 100% 81.5%, 76.5% 100%, 0% 98.8%, 0% 15.8%);
 
     .cardImg {
       height: 100%;
