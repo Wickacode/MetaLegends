@@ -46,8 +46,9 @@
   }
 
   //Responsive Desktop
-@media only screen and (min-device-width: 900px) and (max-device-width: 1300px) {
+@media only screen and (min-device-width: 900px) and (max-device-width: 1500px) {
   .socialFactions {
+    justify-content: center;
     .socialLinkFactions {
     @include flex-rules;
     margin-top: 30px;
@@ -62,7 +63,9 @@
 
 //Responsive tablette
 @media only screen and (min-device-width: 500px) and (max-device-width: 900px) {
-
+  .socialFactions {
+    justify-content: center;
+  }
 }
 
 //Mobile

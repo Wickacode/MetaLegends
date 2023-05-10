@@ -61,5 +61,6 @@ export default function Factions() {
         <SocialFactions />
       </div>
     </div>
+    
   );
 }

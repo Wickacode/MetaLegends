@@ -13,6 +13,10 @@
 
 .nav-logo {
   cursor: pointer;
+
+  &:hover {
+    animation: logoGlow 1300ms infinite;
+  }
 }
 
 .nav-menu {
@@ -51,11 +55,14 @@
 
 .nav-item:hover:after {
   width: 100%;
-  background: #a136db;
-}
-
-.nav-item .active {
-  color: #a136db;
+  background: linear-gradient(
+    to right top,
+    #480a5e,
+    #440b68,
+    #3d0e72,
+    #31127e,
+    #1b1789
+  );
 }
 
 .nav-icon {
@@ -69,6 +76,7 @@
   padding: 20px;
 
   .socialLinksButton {
+    @include flex-rules;
     width: 50px;
     background-image: linear-gradient(
       to right top,

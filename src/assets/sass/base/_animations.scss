@@ -14,6 +14,18 @@
     }
   }
 
+  @keyframes logoGlow {
+    0% {
+      filter: drop-shadow(5px 1px 13px #728dee);
+    }
+    50% {
+      filter: drop-shadow(5px 1px 22px #849bec);
+    }
+    100% {
+      filter: drop-shadow(5px 1px 13px #728dee);
+    }
+  }
+
   //Effet Fade-in 
   .fade-in {
     opacity: 0;
@@ -33,3 +45,13 @@
   opacity: 1;
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    display: block;
+  }
+  100% {
+    opacity: 1;
+    display: block;
+  }
+}

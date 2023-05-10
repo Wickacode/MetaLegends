@@ -12,12 +12,12 @@
     @include flex-rules;
     flex-direction: column;
     gap: 3em;
- 
+
     .avatarActive {
       height: 500px;
 
       img {
-        width: 562px;
+        width: 500px;
         height: 100%;
       }
     }
@@ -33,12 +33,12 @@
         opacity: 0.3;
         background-image: url(../../images/icone/border.svg);
         background-repeat: no-repeat;
-        width: 170px;
+        width: 150px;
         cursor: pointer;
 
         &:hover {
           opacity: 1;
-          transition: 0.3s;
+          transition: 0.5s;
         }
       }
     }
@@ -54,6 +54,7 @@
       justify-content: space-between;
       border-bottom: 2px solid rgb(213, 213, 195);
       padding-bottom: 20px;
+      gap: 2em;
       .faction {
         .factionDesktop {
           .emblemsContainer {
@@ -64,7 +65,12 @@
                 height: 100px;
               }
               .offEmblem {
+                opacity: 0.3;
                 display: block;
+                &:hover {
+                  opacity: 1;
+                  transition: 0.5s;
+                }
               }
               .offEmblem.active {
                 display: none;
@@ -75,7 +81,6 @@
               .onEmblem.active {
                 display: block;
               }
-
             }
           }
         }
@@ -106,15 +111,14 @@
   display: none;
 }
 
-// //Mobile
-@media only screen and (max-width: 1500px) {
+// Responsive
+@media only screen and (min-device-width: 900px) and (max-device-width: 1500px) {
   .factionsContainer {
     flex-direction: column-reverse;
 
     .factionsLeftBloc {
       flex-direction: row;
       width: 100%;
-      border: 2px solid rosybrown;
 
       .avatarActive {
         width: auto;
@@ -122,16 +126,142 @@
         img {
           width: 600px;
           height: 600px;
-        } 
+        }
       }
       .avatarsGallery {
-          flex-direction: column;
-        }
+        flex-direction: column;
+      }
     }
 
     .factionsRightBloc {
       width: 100%;
     }
   }
+}
 
+//Tablet
+@media only screen and (min-device-width: 600px) and (max-device-width: 900px) {
+  .factionsContainer {
+    flex-direction: column-reverse;
+
+    .factionsLeftBloc {
+      flex-direction: row;
+      width: 100%;
+
+      .avatarActive {
+        width: auto;
+        height: auto;
+        img {
+          width: 400px;
+          height: 400px;
+        }
+      }
+      .avatarsGallery {
+        flex-direction: column;
+        img {
+          width: 125px;
+        }
+      }
+    }
+
+    .factionsRightBloc {
+      width: 100%;
+
+      .emblem {
+        cursor: pointer;
+        img {
+          width: 70px;
+          height: 70px;
+        }
+      }
+    }
+
+    .factions {
+      flex-wrap: wrap;
+
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 2px solid rgb(213, 213, 195);
+      padding-bottom: 20px;
+      .faction {
+        .factionDesktop {
+          .emblemsContainer {
+            .emblem {
+              img {
+                width: 70px;
+                height: 70px;
+              }
+            
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//Mobile
+@media only screen and (min-device-width: 320px) and (max-device-width: 600px) {
+  .factionsContainer {
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+  .factionsLeftBloc {
+    flex-direction: row;
+    width: 100%;
+    gap: 0 !important;
+
+    .avatarActive {
+      width: auto;
+      height: auto !important;
+      img {
+        width: 250px !important;
+        height: 250px !important;
+      }
+    }
+    .avatarsGallery {
+      img {
+        width: 70px !important;
+      }
+    }
+  }
+
+  .factionsRightBloc {
+    display: flex;
+    width: 100% !important;
+
+    .factions {
+      flex-wrap: wrap;
+      border-bottom: none !important;
+      gap: 1em;
+      padding: 20px;
+      .emblemsContainer {
+        .emblem {
+          cursor: pointer;
+          img {
+            width: 70px !important;
+            height: 70px !important;
+          }
+        }
+      }
+    }
+
+    .textSection {
+      display: flex;
+      flex-direction: column;
+      gap: 3em;
+      padding: 0 !important;
+      margin-top: 20px;
+
+      .titleUnits {
+        text-align: center;
+        font-size: 1em !important;
+        padding: 0 20px;
+      }
+    }
+
+    .socialFactions {
+      display: none;
+    }
+  }
 }
