@@ -53,9 +53,8 @@ export default function Factions() {
               <h2>{data[activeFaction].title}</h2>
               <span>{data[activeFaction].units}</span>
             </div>
-            <p className="factionsDescription">
-              {data[activeFaction].description}
-            </p>
+            <p className="factionsDescription" dangerouslySetInnerHTML={{__html: data[activeFaction].description}}>
+</p>
           </div>
         )}
         <SocialFactions />

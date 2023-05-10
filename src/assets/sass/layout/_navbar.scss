@@ -90,6 +90,17 @@
     padding: 10px;
     font-size: 1.4em;
     clip-path: polygon(65% 0, 100% 31%, 100% 100%, 0% 100%, 0 51%, 0% 0%);
+
+    &:hover {
+      background-image: linear-gradient(
+        to right top,
+        #1b1789,
+        #31127e,
+        #3d0e72,
+        #440b68,
+        #480a5e
+      );
+    }
   }
 
   .openSeaIcone {

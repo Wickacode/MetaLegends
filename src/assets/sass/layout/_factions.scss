@@ -74,6 +74,7 @@
               }
               .offEmblem.active {
                 display: none;
+                width: 150px;
               }
               .onEmblem {
                 display: none;
@@ -102,6 +103,9 @@
           color: #d092e2;
           font-weight: bold;
         }
+      }
+      .factionsDescription {
+        font-size: 1em;
       }
     }
   }
