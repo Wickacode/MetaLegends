@@ -2,22 +2,24 @@ import React, { useState, useEffect } from "react";
 import data from "../assets/data/factions.json";
 import FactionLeftBloc from "../components/FactionsDetails";
 
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
-
 import { faTwitter, faDiscord } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Factions() {
-  const isMobile = window.innerWidth < 700;
   const [activeFaction, setActiveFaction] = useState("celestials");
+  const avatars = activeFaction in data ? data[activeFaction].gallery : [];
+  const [activeAvatar, setActiveAvatar] = useState("");
+
+  useEffect(() => {
+    setActiveAvatar(avatars[0] || "");
+  }, [activeFaction]);
 
   const handleClick = (faction) => {
     setActiveFaction(faction);
   };
 
   const factions = Object.keys(data).map((faction) => {
-    const { title, description, emblem, units, gallery } = data[faction];
+    const { title, description, emblem } = data[faction];
     return (
       <div className="faction" key={faction}>
         <div className="factionDesktop">
@@ -29,36 +31,13 @@ export default function Factions() {
         </div>
 
         <div className="factionMobile" key={`${faction}-mobile`}>
-          {isMobile ? (
-            <Slider className="emblemSlider">
-              <div className="emblem" onClick={() => handleClick(faction)}>
-                <img src={emblem} alt={`${title} emblem`} />
-              </div>
-              <div className="emblem" onClick={() => handleClick(faction)}>
-                <img src={emblem} alt={`${title} emblem`} />
-              </div>
-              <div className="emblem" onClick={() => handleClick(faction)}>
-                <img src={emblem} alt={`${title} emblem`} />
-              </div>
-              ...
-            </Slider>
-          ) : (
-            <div className="emblem" onClick={() => handleClick(faction)}>
-              <img src={emblem} alt={`${title} emblem`} />
-            </div>
-          )}
+          <div className="emblem" onClick={() => handleClick(faction)}>
+            <img src={emblem} alt={`${title} emblem`} />
+          </div>
         </div>
       </div>
     );
   });
-
-  const avatars = activeFaction in data ? data[activeFaction].gallery : [];
-
-  const [activeAvatar, setActiveAvatar] = useState("");
-
-  useEffect(() => {
-    setActiveAvatar(avatars[0] || "");
-  }, [activeFaction]);
 
   const handleAvatarClick = (avatar) => {
     setActiveAvatar(avatar);
@@ -112,7 +91,6 @@ export default function Factions() {
           </a>
         </div>
       </div>
-      
     </div>
   );
 }

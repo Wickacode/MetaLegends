@@ -14,11 +14,11 @@
   border-radius: 10px;
   overflow: hidden;
 
+  .card {
+  }
   #teamImgContainer {
     height: 100%;
     position: relative;
-    clip-path: polygon(29% 0.8%, 100% 0%, 100% 81.5%, 76.5% 100%, 0% 98.8%, 0% 15.8%);
-
     .cardImg {
       height: 100%;
       width: 100%;
