@@ -2,16 +2,14 @@ import React, { useState, useEffect } from "react";
 import data from "../assets/data/factions.json";
 import FactionLeftBloc from "../components/FactionsDetails";
 
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 
-import {
-  faTwitter,
-  faDiscord,
-  faInstagram,
-} from "@fortawesome/free-brands-svg-icons";
+import { faTwitter, faDiscord } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-
 export default function Factions() {
+  const isMobile = window.innerWidth < 700;
   const [activeFaction, setActiveFaction] = useState("celestials");
 
   const handleClick = (faction) => {
@@ -31,9 +29,24 @@ export default function Factions() {
         </div>
 
         <div className="factionMobile" key={`${faction}-mobile`}>
-          <div className="emblem" onClick={() => handleClick(faction)}>
-            <img src={emblem} alt={`${title} emblem`} />
-          </div>
+          {isMobile ? (
+            <Slider className="emblemSlider">
+              <div className="emblem" onClick={() => handleClick(faction)}>
+                <img src={emblem} alt={`${title} emblem`} />
+              </div>
+              <div className="emblem" onClick={() => handleClick(faction)}>
+                <img src={emblem} alt={`${title} emblem`} />
+              </div>
+              <div className="emblem" onClick={() => handleClick(faction)}>
+                <img src={emblem} alt={`${title} emblem`} />
+              </div>
+              ...
+            </Slider>
+          ) : (
+            <div className="emblem" onClick={() => handleClick(faction)}>
+              <img src={emblem} alt={`${title} emblem`} />
+            </div>
+          )}
         </div>
       </div>
     );
@@ -59,16 +72,16 @@ export default function Factions() {
         handleAvatarClick={handleAvatarClick}
       />
       <div className="factionsRightBloc">
-        <div className="factions">
-          {factions}
-        </div>
+        <div className="factions">{factions}</div>
         {activeFaction in data && (
           <div className="textSection">
             <div className="titleUnits">
               <h2>{data[activeFaction].title}</h2>
               <span>{data[activeFaction].units}</span>
             </div>
-            <p className="factionsDescription">{data[activeFaction].description}</p>
+            <p className="factionsDescription">
+              {data[activeFaction].description}
+            </p>
           </div>
         )}
 
