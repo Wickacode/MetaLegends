@@ -1,22 +1,23 @@
 .factionsContainer {
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: space-between;
   margin: auto;
   padding: 40px;
   @include max-width;
   margin-top: 50px;
+  gap: 2em;
 
   .factionsLeftBloc {
     @include flex-rules;
     flex-direction: column;
-
-    width: 50%;
-
+    gap: 3em;
+ 
     .avatarActive {
-      height: 350px;
+      height: 500px;
 
       img {
-        width: 362px;
+        width: 562px;
         height: 100%;
       }
     }
@@ -32,7 +33,7 @@
         opacity: 0.3;
         background-image: url(../../images/icone/border.svg);
         background-repeat: no-repeat;
-        width: 100px;
+        width: 170px;
         cursor: pointer;
 
         &:hover {
@@ -62,7 +63,19 @@
                 width: 100px;
                 height: 100px;
               }
-              
+              .offEmblem {
+                display: block;
+              }
+              .offEmblem.active {
+                display: none;
+              }
+              .onEmblem {
+                display: none;
+              }
+              .onEmblem.active {
+                display: block;
+              }
+
             }
           }
         }
@@ -86,52 +99,6 @@
         }
       }
     }
-
-    .socialFactions {
-      display: flex;
-      gap: 2em;
-
-      .socialLinkFactions {
-        @include flex-rules;
-        margin-top: 30px;
-        padding: 13px;
-        gap: 10px;
-        font-size: 12px;
-        border-radius: 10px;
-      }
-
-      .socialDiscord {
-        font-size: 12px;
-        background-image: linear-gradient(
-          to right top,
-          #480a5e,
-          #440b68,
-          #3d0e72,
-          #31127e,
-          #1b1789
-        );
-      }
-      .socialDiscord:hover {
-        box-shadow: 0 0 32px rgba(159, 55, 208, 0.79);
-        transition: 0.5s;
-      }
-
-      .socialDiscordIcone {
-        font-size: 30px;
-      }
-    }
-    .socialTwitter {
-      font-size: 12px;
-      background-color: #10a6f8;
-    }
-    .socialTwitter:hover {
-      box-shadow: 0 0 32px rgba(16, 166, 248, 0.79);
-      transition: 0.5s;
-    }
-
-    .socialTwitterIcone {
-      font-size: 30px;
-    }
   }
 }
 
@@ -140,13 +107,31 @@
 }
 
 // //Mobile
-@media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
-  .factionMobile {
-    background-color: #bdb9c0;
-    display: flex;
+@media only screen and (max-width: 1500px) {
+  .factionsContainer {
+    flex-direction: column-reverse;
+
+    .factionsLeftBloc {
+      flex-direction: row;
+      width: 100%;
+      border: 2px solid rosybrown;
+
+      .avatarActive {
+        width: auto;
+        height: auto;
+        img {
+          width: 600px;
+          height: 600px;
+        } 
+      }
+      .avatarsGallery {
+          flex-direction: column;
+        }
+    }
+
+    .factionsRightBloc {
+      width: 100%;
+    }
   }
 
-  .factionDesktop {
-    display: none;
-  }
 }

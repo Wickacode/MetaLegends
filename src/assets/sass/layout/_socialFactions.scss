@@ -1,0 +1,71 @@
+.socialFactions {
+    display: flex;
+    gap: 2em;
+
+    .socialLinkFactions {
+      @include flex-rules;
+      margin-top: 30px;
+      padding: 13px;
+      gap: 10px;
+      font-size: 12px;
+      border-radius: 10px;
+    }
+
+    .socialDiscord {
+      font-size: 12px;
+      background-image: linear-gradient(
+        to right top,
+        #480a5e,
+        #440b68,
+        #3d0e72,
+        #31127e,
+        #1b1789
+      );
+    }
+    .socialDiscord:hover {
+      box-shadow: 0 0 32px rgba(159, 55, 208, 0.79);
+      transition: 0.5s;
+    }
+
+    .socialDiscordIcone {
+      font-size: 30px;
+    }
+
+    .socialTwitter {
+        font-size: 12px;
+        background-color: #10a6f8;
+      }
+      .socialTwitter:hover {
+        box-shadow: 0 0 32px rgba(16, 166, 248, 0.79);
+        transition: 0.5s;
+      }
+  
+      .socialTwitterIcone {
+        font-size: 30px;
+      }
+  }
+
+  //Responsive Desktop
+@media only screen and (min-device-width: 900px) and (max-device-width: 1300px) {
+  .socialFactions {
+    .socialLinkFactions {
+    @include flex-rules;
+    margin-top: 30px;
+    padding: 13px;
+    gap: 10px;
+    font-size: 12px;
+    border-radius: 10px;
+  }
+  }
+  
+}
+
+//Responsive tablette
+@media only screen and (min-device-width: 500px) and (max-device-width: 900px) {
+
+}
+
+//Mobile
+@media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
+ 
+}
