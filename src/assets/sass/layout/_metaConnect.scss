@@ -81,6 +81,21 @@
   }
 }
 
+//Fade
+//parallax
+.mockups img {
+  transition: transform 0.5s ease-out;
+}
+
+.mockups:hover img {
+  transform: translate3d(0, -10px, 30px) rotateY(-10deg);
+}
+
+.mockup1:hover , .mockup2:hover {
+  transform: translate3d(0, -10px, 30px) rotateY(-10deg);
+}
+
+
 //Responsive Desktop
 @media only screen and (min-device-width: 900px) and (max-device-width: 1300px) {
   .metaConnectContainer {

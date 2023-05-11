@@ -11,14 +11,22 @@ export default function Team() {
     fadeInOnScroll(elements.current);
   }, []);
   return (
-    <div className="teamContainer fade-in-scroll"ref={el => elements.current.push(el)} id="sectionTeam">
+    <div className="team">
+      <div className="teamDescription">
+        <h2 className="title-with-gradient titleTeam">Our<br /> <span>team</span></h2>
+      <p>An experienced team of passionate entrepreneurs,art directors, developers and game makers dedicated to creating the future. </p>
+      </div>
+      
+      <div className="teamContainer fade-in-scroll"ref={el => elements.current.push(el)} id="sectionTeam">
       {Object.keys(teamData).map((memberKey) => {
         const { name, description, img, instagram, twitter } =
           teamData[memberKey];
         return (
-          <div key={memberKey} className="teamCard">
+          <div className="teamContainer">
+            <div key={memberKey} className="teamCard">
             <div id="teamImgContainer">
               <img className="cardImg" src={img} alt={name} />
+              <img className="cardImgReflect" src={img} alt={name} />
             </div>
 
             <div className="teamInfoContainer">
@@ -36,8 +44,12 @@ export default function Team() {
               )}
             </div>
           </div>
+          </div>
+          
         );
       })}
     </div>
+    </div>
+    
   );
 }
