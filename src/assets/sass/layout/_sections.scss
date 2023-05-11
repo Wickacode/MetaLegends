@@ -63,6 +63,23 @@
   }
 }
 
+//parallax
+.metaLegendsImg img, .metaLifeImg img, .metaVerseImg img {
+  transition: transform 0.5s ease-out;
+}
+
+.metaLegendsImg:hover img {
+  transform: translate3d(0, -10px, 30px) rotateY(-10deg);
+}
+
+.metaLifeImg:hover img {
+  transform: translate3d(0, -10px, 30px) rotateY(-10deg);
+}
+
+.metaVerseImg:hover img {
+  transform: translate3d(0, -10px, 30px) rotateY(-10deg);
+}
+
 //Responsive Desktop
 @media only screen and (min-device-width: 900px) and (max-device-width: 1300px) {
   .sectionsContainer {

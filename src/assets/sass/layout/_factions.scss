@@ -15,6 +15,7 @@
 
     .avatarActive {
       height: 500px;
+      clip-path: polygon(63% 0, 100% 37%, 100% 60%, 100% 100%, 0 100%, 0% 60%, 0 0);
 
       img {
         width: 500px;
@@ -35,6 +36,7 @@
         background-repeat: no-repeat;
         width: 150px;
         cursor: pointer;
+        clip-path: polygon(63% 0, 100% 37%, 100% 60%, 100% 100%, 0 100%, 0% 60%, 0 0);
 
         &:hover {
           opacity: 1;
