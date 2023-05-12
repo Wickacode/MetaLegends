@@ -15,9 +15,18 @@
 
     .avatarActive {
       height: 500px;
-      clip-path: polygon(63% 0, 100% 37%, 100% 60%, 100% 100%, 0 100%, 0% 60%, 0 0);
-
+      clip-path: polygon(
+        30% 0%,
+        77% 0,
+        100% 23%,
+        100% 100%,
+        70% 100%,
+        30% 100%,
+        0 100%,
+        0 0
+      );
       img {
+        border-radius: 10px;
         width: 500px;
         height: 100%;
       }
@@ -32,12 +41,20 @@
 
       img {
         opacity: 0.3;
-        background-image: url(../../images/icone/border.svg);
         background-repeat: no-repeat;
         width: 150px;
         cursor: pointer;
-        clip-path: polygon(63% 0, 100% 37%, 100% 60%, 100% 100%, 0 100%, 0% 60%, 0 0);
-
+        border-radius: 10px;
+        clip-path: polygon(
+          30% 0%,
+          77% 0,
+          100% 23%,
+          100% 100%,
+          70% 100%,
+          30% 100%,
+          0 100%,
+          0 0
+        );
         &:hover {
           opacity: 1;
           transition: 0.5s;
@@ -53,22 +70,25 @@
 
     .factions {
       display: flex;
+      align-items: baseline;
+      height: 160px;
       justify-content: space-between;
-      border-bottom: 2px solid rgb(213, 213, 195);
-      padding-bottom: 20px;
       gap: 2em;
+
       .faction {
         .factionDesktop {
           .emblemsContainer {
+            @include flex-rules;
             .emblem {
               cursor: pointer;
               img {
-                width: 100px;
-                height: 100px;
+                width: 80px;
+                height: 80px;
               }
               .offEmblem {
                 opacity: 0.3;
                 display: block;
+                margin-bottom: 30px;
                 &:hover {
                   opacity: 1;
                   transition: 0.5s;
@@ -80,10 +100,18 @@
               }
               .onEmblem {
                 display: none;
+                margin-bottom: 30px;
               }
               .onEmblem.active {
                 display: block;
+                width: 110px;
+                height: 110px;
               }
+            }
+
+            span {
+              @include flex-rules;
+              text-transform: uppercase;
             }
           }
         }
@@ -172,34 +200,41 @@
 
     .factionsRightBloc {
       width: 100%;
+      
+      .factions {
+        flex-wrap: wrap;
+        justify-content: center !important;
+        height: 300px;
+       
+      }
 
       .emblem {
-        cursor: pointer;
         img {
           width: 70px;
           height: 70px;
         }
       }
+      span {
+        font-size: 0.8em !important;
+      }
     }
 
-    .factions {
-      flex-wrap: wrap;
-
-      display: flex;
-      justify-content: space-between;
-      border-bottom: 2px solid rgb(213, 213, 195);
-      padding-bottom: 20px;
-      .faction {
-        .factionDesktop {
-          .emblemsContainer {
-            .emblem {
-              img {
-                width: 70px;
-                height: 70px;
-              }
-            
-            }
-          }
+    .emblemsContainer {
+      
+      .emblem {
+        flex-wrap: wrap;
+        .offEmblem {
+          width: 70px !important;
+          height: 70px !important; 
+        }
+        .offEmblem.active {
+          display: none;
+          width: 150px;
+        }
+        .onEmblem.active {
+          display: block;
+          width: 80px;
+          height: 80px;
         }
       }
     }
@@ -238,15 +273,23 @@
 
     .factions {
       flex-wrap: wrap;
-      border-bottom: none !important;
+      justify-content: center !important;
       gap: 1em;
       padding: 20px;
+      height:540px !important;
       .emblemsContainer {
+
         .emblem {
-          cursor: pointer;
+          @include flex-rules;
+          flex-direction: column;
+
+          .offEmblem {
+            width: 60px !important;
+            height: 60px !important;
+          }
           img {
-            width: 70px !important;
-            height: 70px !important;
+            width: 80px !important;
+            height: 80px !important;
           }
         }
       }

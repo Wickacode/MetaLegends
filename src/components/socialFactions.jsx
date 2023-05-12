@@ -12,10 +12,6 @@ export default function socialFactions() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            {" "}
-            <span>
-              Joins us on <strong>Discord</strong>
-            </span>
             <FontAwesomeIcon className="socialDiscordIcone" icon={faDiscord} />
           </a>
           <a
@@ -24,10 +20,6 @@ export default function socialFactions() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            {" "}
-            <span>
-              Joins us on <strong>Twitter</strong>
-            </span>
             <FontAwesomeIcon className="socialTwitterIcone" icon={faTwitter} />
           </a>
         </div>

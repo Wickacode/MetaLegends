@@ -27,6 +27,7 @@ export default function Factions() {
               className={`offEmblem ${activeFaction === faction ? 'active' : ''}`}/>
               <img src={onEmblem} alt={`${title} emblem`}
               className={`onEmblem ${activeFaction === faction ? 'active' : ''}`}/>
+              <span>{title}</span>
             </div>
           </div>
         </div>
@@ -47,6 +48,8 @@ export default function Factions() {
       />
       <div className="factionsRightBloc">
         <div className="factions">{factions}</div>
+        <br /><br />
+        <hr />
         {activeFaction in data && (
           <div className="textSection">
             <div className="titleUnits">

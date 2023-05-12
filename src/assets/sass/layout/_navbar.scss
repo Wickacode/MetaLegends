@@ -102,19 +102,9 @@
       );
     }
   }
-
-  .openSeaIcone {
-    width: 155px;
-  }
-  .openSeaIcone::after {
-    content: "OpenSea";
-    font-size: 14px;
-    font-weight: bold;
-    margin: 0 10px;
-    vertical-align: middle;
-  }
+  
   img {
-    width: 25px;
+    width: 28px;
   }
 }
 
