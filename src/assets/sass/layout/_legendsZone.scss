@@ -130,11 +130,11 @@
 }
 
 //Mobile
-@media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
+@media only screen and (min-device-width: 300px) and (max-device-width: 500px) {
   .legendsZoneContainer {
     margin-top: 0px !important;
     .legendsZoneTitle {
-      font-size: 1rem !important;
+      font-size: 1.5em !important;
     }
     .legendsZoneImg {
       width: 100%;

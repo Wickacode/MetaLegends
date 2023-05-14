@@ -103,16 +103,6 @@
     }
   }
 
-  .openSeaIcone {
-    width: 155px;
-  }
-  .openSeaIcone::after {
-    content: "OpenSea";
-    font-size: 14px;
-    font-weight: bold;
-    margin: 0 10px;
-    vertical-align: middle;
-  }
   img {
     width: 25px;
   }
@@ -123,7 +113,6 @@
     width: 120px;
   }
   .nav-menu {
-    @include flex-rules;
     flex-direction: column;
     width: 100%;
     border-top: 1pxsolid #fff;
@@ -185,16 +174,7 @@
       font-size: 1.4em;
       clip-path: none;
     }
-    .openSeaIcone {
-      width: 155px;
-    }
-    .openSeaIcone::after {
-      content: "OpenSea";
-      font-size: 14px;
-      font-weight: bold;
-      margin: 0 10px;
-      vertical-align: middle;
-    }
+
     img {
       width: 25px;
     }
@@ -244,16 +224,6 @@
       font-size: 1em;
     }
 
-    .openSeaIcone {
-      width: 155px;
-    }
-    .openSeaIcone::after {
-      content: "OpenSea";
-      font-size: 14px;
-      font-weight: bold;
-      margin: 0 10px;
-      vertical-align: middle;
-    }
     img {
       width: 20px;
     }

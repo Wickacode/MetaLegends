@@ -172,7 +172,10 @@
     #firstSection {
       flex-wrap: wrap;
       padding: 0;
-
+      
+      .sectionText {
+        margin-top: 30px;
+      }
       .metaLegendsImg {
         img {
           width: 200px !important;

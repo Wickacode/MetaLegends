@@ -33,7 +33,6 @@
   width: 250px;
   height: 420px;
   margin: 30px;
-  border-radius: 10px;
   overflow: hidden;
   -webkit-box-reflect: below 0 linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
 
@@ -45,6 +44,7 @@
       height: 100%;
       width: 100%;
       object-fit: cover;
+      border-radius: 10px;
       cursor: pointer;
       
     }
@@ -62,7 +62,8 @@
     color: #4d308d;
   }
   p {
-    font-size: 16px;
+    font-size: 17px;
+    font-weight: bold;
     margin: 10px 0;
     position: absolute;
     top: -359px;
@@ -107,15 +108,14 @@
 @media only screen and (min-device-width: 900px) and (max-device-width: 1300px) {
   .teamContainer {
     @include flex-rules;
-    flex-wrap: wrap;
     margin-top: 80px;
-    max-width: 1200px;
+    max-width: 900px;
     margin: auto;
-    gap: 0;
+    gap: 0 !important;
+    width: fit-content;
   }
 
   .teamCard {
-    width: 30%;
     height: 370px;
     padding: 10px;
     margin: 0;
@@ -168,16 +168,16 @@
 @media only screen and (min-device-width: 500px) and (max-device-width: 900px) {
   .teamContainer {
     @include flex-rules;
-    flex-wrap: wrap;
+    
     margin-top: 80px;
-    max-width: 1200px;
+    max-width: 900px;
     margin: auto;
-    gap: 0;
+    gap: 0 !important;
+    width: fit-content;
   }
 
   .teamCard {
-    width: 44%;
-    height: 300px;
+    height: 370px;
     padding: 10px;
     margin: 0;
 
@@ -194,29 +194,20 @@
     position: relative;
     h3 {
       font-size: 1.5rem;
-      font-weight: bold;
-      position: absolute;
-      top: -250px;
-      color: #4d308d;
+      top: -330px;
     }
     p {
       font-size: 16px;
       margin: 10px 0;
-      position: absolute;
       left: -19px;
-      top: -235px;
-      color: #4d308d;
+      top: -315px;
     }
     a {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 15px;
-      color: #fbefef;
+      font-size: 18px;
 
       .faInstagram,
       .faTwitter {
-        padding: 14px;
+        padding: 15px;
       }
 
       .faInstagram {
@@ -235,19 +226,17 @@
 }
 
 //Mobile
-@media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
+@media only screen and (min-device-width: 300px) and (max-device-width: 500px) {
   .teamContainer {
     @include flex-rules;
-    flex-wrap: wrap;
     margin-top: 80px;
-    max-width: 1200px;
     margin: auto;
-    gap: 0;
+    gap: 0 !important;
+    width: fit-content;
   }
 
   .teamCard {
-    width: 47%;
-    height: 190px;
+    height: 270px;
     padding: 10px;
     margin: 0;
 
@@ -263,42 +252,33 @@
     padding: 10px;
     position: relative;
     h3 {
-      font-size: 1.3rem;
-      font-weight: bold;
-      position: absolute;
-      top: -160px;
-      color: #4d308d;
+      font-size: 1.5rem;
+      top: -236px;
     }
     p {
       font-size: 16px;
       margin: 10px 0;
-      position: absolute;
-      left: -4px;
-      top: -145px;
-      color: #4d308d;
+      left: -5px;
+      top: -220px;
     }
     a {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 11px;
-      color: #fbefef;
+      font-size: 18px;
 
       .faInstagram,
       .faTwitter {
-        padding: 12px;
+        padding: 15px;
       }
 
       .faInstagram {
         position: absolute;
-        top: -40px;
-        left: 20px;
+        top: -50px;
+        left: 40px;
       }
 
       .faTwitter {
         position: absolute;
-        top: -40px;
-        left: 73px;
+        top: -50px;
+        left: 90px;
       }
     }
   }
