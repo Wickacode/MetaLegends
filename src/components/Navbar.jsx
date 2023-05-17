@@ -19,7 +19,7 @@ function NavBar() {
     <>
       <nav className="navbar">
         <div className="nav-container">
-          <NavLink exact to="/" className="nav-logo">
+          <NavLink to="/" exact="true" className="nav-logo">
             <img
               className="logoMetaLegends"
               src={LogoMetaLegends}
@@ -29,54 +29,59 @@ function NavBar() {
 
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
-              <a
-                href="/"
-                activeClassName="active"
+              <NavLink
+                to="/"
+                exact="true"
+                activeclassname="active"
                 className="nav-links"
                 onClick={handleClick}
               >
                 Home
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <a
-                href="#sectionMetaLife"
-                activeClassName="active"
+              <NavLink
+                to="#sectionMetaLife"
+                exact="true"
+                activeclassname="active"
                 className="nav-links"
                 onClick={handleClick}
               >
                 Meta Life
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <a
-                href="#sectionMetaConnect"
-                activeClassName="active"
+              <NavLink
+                to="#sectionMetaConnect"
+                exact="true"
+                activeclassnamee="active"
                 className="nav-links"
                 onClick={handleClick}
               >
                 Meta Connect
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <a
-                href="#sectionLegendsZone"
-                activeClassName="active"
+              <NavLink
+                to="#sectionLegendsZone"
+                exact="true"
+                activeclassname="active"
                 className="nav-links"
                 onClick={handleClick}
               >
                 Meta Legends
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <a
-                href="#sectionTeam"
-                activeClassName="active"
+              <NavLink
+                to="#sectionTeam"
+                exact="true"
+                activeclassname="active"
                 className="nav-links"
                 onClick={handleClick}
               >
                 Team
-              </a>
+              </NavLink>
             </li>
             <div className="socialLinks">
               <a

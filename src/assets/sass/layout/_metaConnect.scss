@@ -81,20 +81,83 @@
   }
 }
 
-//Fade
-//parallax
-.mockups img {
-  transition: transform 0.5s ease-out;
+//parallax Mockup1&2
+.mockup1,
+.mockup2 {
+  opacity: 0;
 }
 
-.mockups:hover img {
-  transform: translate3d(0, -10px, 30px) rotateY(-10deg);
+.fade-in-scroll .mockup1 {
+  animation: fade-in-top 1.5s ease-out forwards;
 }
 
-.mockup1:hover , .mockup2:hover {
-  transform: translate3d(0, -10px, 30px) rotateY(-10deg);
+.fade-in-scroll .mockup2 {
+  animation: fade-in-bottom 1.5s ease-out forwards;
 }
 
+@keyframes fade-in-top {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes fade-in-bottom {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.visible {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}
+
+// Parallax mopckup2
+.fadeInLeft {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: opacity 1s ease-in, transform 1s ease-in;
+}
+
+.fadeInLeft.fadeInLeftVisible {
+  opacity: 1;
+  transform: translateX(0);
+}
+.fadeInRight {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: opacity 1s ease-in, transform 1s ease-in;
+}
+
+.fadeInRight.fadeInRightVisible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+// Parallax Mockup3
+@keyframes fadeMockup {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.mockup3 {
+  opacity: 0;
+  animation: fadeMockup 1.5s ease-in forwards;
+}
 
 //Responsive Desktop
 @media only screen and (min-device-width: 900px) and (max-device-width: 1300px) {

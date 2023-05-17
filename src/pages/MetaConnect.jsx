@@ -1,9 +1,9 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect } from "react";
 import Mockup1 from "../assets/images/mockups/mockup1.svg";
 import Mockup2 from "../assets/images/mockups/mockup2.svg";
 import Mockup3 from "../assets/images/mockups/mockup3.svg";
 
-import fadeInOnScroll from "../components/FadeAnimation"
+import fadeInOnScroll from "../components/FadeAnimation";
 
 export default function MetaConnect() {
   const elements = useRef([]);
@@ -13,8 +13,12 @@ export default function MetaConnect() {
   }, []);
 
   return (
-    <div className="metaConnectContainer fade-in-scroll"ref={el => elements.current.push(el)} id="sectionMetaConnect">
-      <div className="mcTopBloc" >
+    <div
+      className="metaConnectContainer fade-in-scroll"
+      ref={(el) => elements.current.push(el)}
+      id="sectionMetaConnect"
+    >
+      <div className="mcTopBloc">
         <div className="sectionText">
           <h2 className="title-with-gradient">Meta connect</h2>
           <p>
@@ -79,7 +83,9 @@ export default function MetaConnect() {
       </div>
 
       <button className="btnJoin">
-        Join <strong>meta connect</strong>
+        <a href="https://meta-connect.io/" target="_blank">
+          Join <strong>meta connect</strong>
+        </a>
       </button>
     </div>
   );

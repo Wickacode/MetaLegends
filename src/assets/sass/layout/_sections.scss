@@ -1,11 +1,14 @@
 .sectionsContainer {
-  @include flex-rules;
+  display: flex;
+    align-items: center;
+    justify-content: center;
   flex-direction: column;
   margin-top: 80px;
 
   #firstSection {
-    @include flex-rules;
-    @include max-width;
+    display: flex;
+    align-items: center;
+    justify-content: center;;
     padding: 40px;
 
     .metaLegendsImg {
@@ -27,7 +30,9 @@
   }
 
   #secondSection {
-    @include flex-rules;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 6em;
 
     .metaLifeImg {
@@ -43,7 +48,9 @@
   }
 
   #thirdSection {
-    @include flex-rules;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 6em;
 
     .metaVerseImg {
