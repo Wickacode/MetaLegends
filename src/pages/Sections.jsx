@@ -35,7 +35,7 @@ export default function Sections() {
           <h2 className="title-with-gradient">{secondSection.title}</h2>
           <p dangerouslySetInnerHTML={{ __html: secondSection.content }}></p>
           <a
-          className="btnBecome"
+          className="btnBecome mobileBtn"
           href="https://meta-life.io/"
           target="_blank"
           rel="noopener noreferrer"

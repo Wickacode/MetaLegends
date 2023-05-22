@@ -71,6 +71,10 @@
     padding: 10px;
     border-radius: 10px;
   }
+
+  .mobileBtn {
+    width: 200px !important;
+  }
 }
 
 //Responsive Desktop
@@ -92,6 +96,10 @@
     margin: 40px auto;
     padding: 18px;
   }
+
+  .mobileBtn {
+    width: 300px !important;
+  }
 }
 
 //Responsive tablette
@@ -112,6 +120,9 @@
     width: auto;
     margin: 50px auto;
     padding: 15px;
+  }
+  .mobileBtn {
+    width: 250px !important;
   }
 }
 
