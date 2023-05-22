@@ -25,9 +25,14 @@ export default function LegendsZone() {
           of their perks, benefits and advancements as holders.
         </p>
 
-        <button className="btnBecome">
+        <a
+          className="btnBecome"
+          href="https://legends-zone.meta-legends.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Become <strong>a legend</strong>
-        </button>
+        </a>
       </div>
     </section>
   );
