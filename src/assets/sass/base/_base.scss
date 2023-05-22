@@ -54,6 +54,11 @@ ul {
   text-transform: uppercase;
   margin-bottom: 50px;
   font-family: 'Bronova', sans-serif;
+  filter: drop-shadow(-3px 4px 14px #7c6986);
+}
+
+.subText {
+  filter: drop-shadow(-3px 4px 14px #7c6986);
 }
 
 p {

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-scroll";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -15,73 +15,92 @@ function NavBar() {
   const [click, setClick] = useState(false);
 
   const handleClick = () => setClick(!click);
+
   return (
     <>
       <nav className="navbar">
         <div className="nav-container">
-          <NavLink to="/" exact="true" className="nav-logo">
+          <Link
+            to="sectionHome"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            className="nav-logo"
+            onClick={handleClick}
+          >
             <img
               className="logoMetaLegends"
               src={LogoMetaLegends}
               alt="logo meta legends"
             />
-          </NavLink>
+          </Link>
 
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
-              <NavLink
-                to="/"
-                exact="true"
-                activeclassname="active"
+              <Link
+                to="sectionHome"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
                 className="nav-links"
                 onClick={handleClick}
               >
                 Home
-              </NavLink>
+              </Link>
             </li>
             <li className="nav-item">
-              <NavLink
-                to="#sectionMetaLife"
-                exact="true"
-                activeclassname="active"
+              <Link
+                to="sectionMetaLife"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
                 className="nav-links"
                 onClick={handleClick}
               >
                 Meta Life
-              </NavLink>
+              </Link>
             </li>
             <li className="nav-item">
-              <NavLink
-                to="#sectionMetaConnect"
-                exact="true"
-                activeclassnamee="active"
+              <Link
+                to="sectionMetaConnect"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
                 className="nav-links"
                 onClick={handleClick}
               >
                 Meta Connect
-              </NavLink>
+              </Link>
             </li>
             <li className="nav-item">
-              <NavLink
-                to="#sectionLegendsZone"
-                exact="true"
-                activeclassname="active"
+              <Link
+                to="sectionLegendsZone"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
                 className="nav-links"
                 onClick={handleClick}
               >
                 Meta Legends
-              </NavLink>
+              </Link>
             </li>
             <li className="nav-item">
-              <NavLink
-                to="#sectionTeam"
-                exact="true"
-                activeclassname="active"
+              <Link
+                to="sectionTeam"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
                 className="nav-links"
                 onClick={handleClick}
               >
                 Team
-              </NavLink>
+              </Link>
             </li>
             <div className="socialLinks">
               <a

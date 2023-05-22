@@ -80,6 +80,8 @@
           .emblemsContainer {
             @include flex-rules;
             .emblem {
+              @include flex-rules;
+              flex-direction: column;
               cursor: pointer;
               img {
                 width: 80px;
@@ -91,12 +93,13 @@
                 margin-bottom: 30px;
                 &:hover {
                   opacity: 1;
-                  transition: 0.5s;
+                  transition: 1.5s;
                 }
               }
               .offEmblem.active {
                 display: none;
                 width: 150px;
+                
               }
               .onEmblem {
                 display: none;
@@ -106,6 +109,7 @@
                 display: block;
                 width: 110px;
                 height: 110px;
+                
               }
             }
 

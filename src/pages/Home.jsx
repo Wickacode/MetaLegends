@@ -32,7 +32,7 @@ export default function Home() {
                   12345 Legends
                 </span>{" "}
                 <br />
-                to Save humanity
+                <span className="subText">to Save humanity</span>
               </h1>
               <p>
                 Meta Legends is a collection of{" "}
