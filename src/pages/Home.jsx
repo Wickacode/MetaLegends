@@ -8,6 +8,7 @@ import Sections from "./Sections";
 import MetaConnect from "./MetaConnect";
 import LegendsZone from "./LegendsZone";
 import Team from "../components/Team";
+import Document from "../assets/Terms&Conditions Edited-2.docx";
 
 export default function Home() {
   const handleButtonClick = () => {
@@ -68,6 +69,9 @@ export default function Home() {
       <MetaConnect />
       <LegendsZone />
       <Team />
+      <div className="footer">
+          <a href={Document}>© Terms & conditions</a>
+      </div>
     </div>
   );
 }
